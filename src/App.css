@@ -2,26 +2,39 @@
   a {
     --ion-color-primary: #3b82f6;
   }
+  ion-tab-button.home.tab-selected,
+ion-tab-button.home.tab-selected:hover {
+  color: #FFA101;
+}
+ion-tab-button.home{
+  color: #ffffff;
+}
+.drop{
+  background-color: #000000;
 }
 
+}
+.primary-color{
+  color: #FFA101;
+}
 ion-tab-button.home.tab-selected,
 ion-tab-button.home.tab-selected:hover {
-  color: #3b82f6;
+  color: #FFA101;
 }
 
 ion-tab-button.matrix.tab-selected,
 ion-tab-button.matrix.tab-selected:hover {
-  color: #f6b600;
+  color: #FFA101;
 }
 
 ion-tab-button.stopwatch.tab-selected,
 ion-tab-button.stopwatch.tab-selected:hover {
-  color: #f63ba2;
+  color: #FFA101;
 }
 
 ion-tab-button.user.tab-selected,
 ion-tab-button.user.tab-selected:hover {
-  color: #10b981;
+  color: #FFA101;
 }
 
 .red.alert-button.sc-ion-alert-ios {
