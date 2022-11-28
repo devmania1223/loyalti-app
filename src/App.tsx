@@ -11,7 +11,7 @@ import {
   useIonAlert,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { add, alarm, grid, home, person } from "ionicons/icons";
+import { add, alarm, card, fileTray, grid, home, person, search } from "ionicons/icons";
 import { useContext } from "react";
 import { Redirect, Route } from "react-router-dom";
 import DetailedMatrix from "./pages/DetailedMatrix";
@@ -28,6 +28,8 @@ import Tips from "./pages/Tips";
 import StressMgmt from "./pages/tips/StressMgmt";
 import TimeMgmt from "./pages/tips/TimeMgmt";
 import User from "./pages/User";
+import Login from "./pages/login";
+
 import { TasksContext } from "./utils/contexts/TasksContext";
 
 /* Core CSS required for Ionic components to work properly */
@@ -54,6 +56,8 @@ import "./App.css";
 import FAQs from "./pages/helpcenter/FAQs";
 import Suggestions from "./pages/helpcenter/Suggestions";
 import GetStarted from "./pages/helpcenter/GetStarted";
+import ForgotPassword from "./pages/ForgotPassword";
+import Home from "./pages/Home";
 
 setupIonicReact();
 
@@ -66,6 +70,15 @@ const App: React.FC = () => {
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
+          <Route exact path="/Login">
+              <Login />
+            </Route>
+            <Route exact path="/Forgot">
+              <ForgotPassword />
+            </Route>
+            <Route exact path="/Home">
+              <Home />
+            </Route>
             <Route exact path="/Tasks">
               <Tasks />
             </Route>
@@ -84,17 +97,17 @@ const App: React.FC = () => {
           </IonRouterOutlet>
           <IonTabBar
             slot="bottom"
-            color="primary"
+            color="white"
             mode="ios"
             translucent
-            className="relative bottom-5 rounded-2xl w-[90%] py-3 mx-auto my-0 shadow-lg font-sans">
-            <IonTabButton tab="Home" href="/Tasks" className="home">
+            className="relative bottom-5  w-[100%] py-3 mx-auto my-0  font-sans">
+            <IonTabButton tab="Home" href="/Home" className="home">
               <IonIcon icon={home} />
               <IonLabel className="font-semibold">Home</IonLabel>
             </IonTabButton>
             <IonTabButton
               tab="New Task"
-              className="new-task"
+              className="home"
               onClick={() =>
                 presentAlert({
                   header: "Add Task",
@@ -143,21 +156,21 @@ const App: React.FC = () => {
                   cssClass: "font-sans",
                 })
               }>
-              <IonIcon icon={add} />
+              <IonIcon icon={search}/>
               <IonLabel className="font-semibold">New Task</IonLabel>
             </IonTabButton>
-            <IonTabButton tab="Matrix" href="/Matrix" className="matrix">
+            {/* <IonTabButton tab="Matrix" href="/Matrix" className="matrix">
               <IonIcon icon={grid} />
               <IonLabel className="font-semibold">Matrix</IonLabel>
-            </IonTabButton>
+            </IonTabButton> */}
             <IonTabButton
               tab="Stopwatch"
               href="/Stopwatch"
-              className="stopwatch">
-              <IonIcon icon={alarm} />
+              className="home">
+              <IonIcon icon={card} />
               <IonLabel className="font-semibold">Stopwatch</IonLabel>
             </IonTabButton>
-            <IonTabButton tab="User" href="/User" className="user">
+            <IonTabButton tab="User" href="/Login" className="home">
               <IonIcon icon={person} />
               <IonLabel className="font-semibold">User</IonLabel>
             </IonTabButton>
