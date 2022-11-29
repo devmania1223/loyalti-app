@@ -89,6 +89,7 @@ ion-searchbar.custom-searchbar {
   --ion-color-dark-tint: #f5f6f9;
   font-family: "Inter-Regular" ;
   font-weight: 400;
+  font-size: 16px;
 }
 
 ion-searchbar.ios.custom-searchbar {
@@ -135,4 +136,11 @@ width: 100%;
 }
 .card{
   border: 1px solid #DEDEDE
+}
+
+.store-overflow {
+  width: 150px;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
 }

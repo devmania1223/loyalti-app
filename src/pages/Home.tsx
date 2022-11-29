@@ -1,12 +1,29 @@
 import { App } from "@capacitor/app";
-import { IonContent, IonIcon, IonPage, IonSearchbar } from "@ionic/react";
+import {
+  IonContent,
+  IonIcon,
+  IonPage,
+  IonSearchbar,
+  IonButtons,
+  IonButton,
+  IonModal,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonAvatar,
+  IonImg,
+} from "@ionic/react";
 import { barcodeOutline, ellipse } from "ionicons/icons";
 import Lottie from "lottie-react";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import noTasks from "../lotties/noTasks.json";
 import { TasksContext } from "../utils/contexts/TasksContext";
 import "../App.css";
 import ShopCard from "./ShopCard";
+import ScanQR from "./ScanQR";
 
 const Home: React.FC = () => {
   const { state, dispatch } = useContext(TasksContext);
@@ -20,10 +37,20 @@ const Home: React.FC = () => {
     setButtonActive("");
     setButtonActive(e.target.id);
     console.log(buttonActive);
-    
-
   };
+  const modal = useRef<HTMLIonModalElement>(null);
+  const page = useRef(null);
 
+  const [presentingElement, setPresentingElement] =
+    useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setPresentingElement(page.current);
+  }, []);
+
+  function dismiss() {
+    modal.current?.dismiss();
+  }
   const shops = [
     {
       shopImg:
@@ -91,7 +118,9 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   {" "}
-                  <IonIcon icon={barcodeOutline} className="home text-2xl" />
+                  <button id="open-modal" expand="block">
+                    <IonIcon icon={barcodeOutline} className="home text-2xl" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -101,9 +130,7 @@ const Home: React.FC = () => {
                 className=" rounded-full shadow-none custom-searchbar 	"
                 placeholder="Search here"></IonSearchbar>
             </div>
-            <div
-              
-              className="grid grid-flow-col auto-cols-max pt-5 pl-3 category-button-div">
+            <div className="grid grid-flow-col auto-cols-max pt-5 pl-3 category-button-div">
               {category.map((category, index) => (
                 <button
                   key={category}
@@ -125,6 +152,15 @@ const Home: React.FC = () => {
         ) : (
           <NoTasks />
         )}
+        <IonModal
+          ref={modal}
+          trigger="open-modal"
+          initialBreakpoint={0.93}
+          breakpoints={[0, 0.25, 0.5, 0.75]}>
+          <IonContent className="ion-padding">
+            <ScanQR />
+          </IonContent>
+        </IonModal>
       </IonContent>
     </IonPage>
   );

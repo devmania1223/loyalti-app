@@ -29,6 +29,7 @@ import StressMgmt from "./pages/tips/StressMgmt";
 import TimeMgmt from "./pages/tips/TimeMgmt";
 import User from "./pages/User";
 import Login from "./pages/Login";
+import ScanQR from "./pages/ScanQR";
 
 import { TasksContext } from "./utils/contexts/TasksContext";
 
@@ -58,6 +59,7 @@ import Suggestions from "./pages/helpcenter/Suggestions";
 import GetStarted from "./pages/helpcenter/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
+import Search from "./pages/Search";
 
 setupIonicReact();
 
@@ -79,8 +81,11 @@ const App: React.FC = () => {
             <Route exact path="/Home">
               <Home />
             </Route>
-            <Route exact path="/Tasks">
-              <Tasks />
+            <Route exact path="/Open">
+              <ScanQR/>
+            </Route>
+            <Route exact path="/Search">
+              <Search />
             </Route>
             <Route path="/Matrix">
               <Matrix />
@@ -106,64 +111,15 @@ const App: React.FC = () => {
               <IonLabel className="font-semibold">Home</IonLabel>
             </IonTabButton>
             <IonTabButton
-              tab="New Task"
+              tab="search"
+              href="/Search"
               className="home"
-              // onClick={() =>
-              //   presentAlert({
-              //     header: "Add Task",
-              //     inputs: [
-              //       {
-              //         name: "title",
-              //         type: "text",
-              //         placeholder: "Title",
-              //       },
-              //       {
-              //         name: "description",
-              //         type: "textarea",
-              //         placeholder: "Description (optional)",
-              //       },
-              //     ],
-              //     buttons: [
-              //       {
-              //         text: "Cancel",
-              //         role: "cancel",
-              //         cssClass: "red",
-              //       },
-              //       {
-              //         text: "Add",
-              //         role: "add",
-              //         handler: (data: any) => {
-              //           if (data.title) {
-              //             data.date = new Date().toDateString();
-              //             data.completed = false;
-              //             dispatch({
-              //               type: "setTasks",
-              //               tasks: [...state.tasks, data],
-              //             });
-              //           } else {
-              //             dispatch({
-              //               type: "setShowToast",
-              //               showToast: true,
-              //             });
-              //           }
-              //         },
-              //         cssClass: "blue",
-              //       },
-              //     ],
-              //     mode: "ios",
-              //     animated: true,
-              //     translucent: true,
-              //     cssClass: "font-sans",
-              //   })
-              // }
+  
               >
               <IonIcon icon={search}/>
               <IonLabel className="font-semibold">Search</IonLabel>
             </IonTabButton>
-            {/* <IonTabButton tab="Matrix" href="/Matrix" className="matrix">
-              <IonIcon icon={grid} />
-              <IonLabel className="font-semibold">Matrix</IonLabel>
-            </IonTabButton> */}
+
             <IonTabButton
               tab="Stopwatch"
               href="/Stopwatch"
