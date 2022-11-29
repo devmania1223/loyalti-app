@@ -1,5 +1,5 @@
 import { App } from "@capacitor/app";
-import { IonContent, IonIcon, IonList, IonPage, IonInput, IonTab } from "@ionic/react";
+import { IonContent, IonIcon, IonPage } from "@ionic/react";
 import { checkmark, checkmarkDone, close } from "ionicons/icons";
 import Lottie from "lottie-react";
 import React, { useContext, useEffect } from "react";
@@ -91,10 +91,10 @@ const Login: React.FC = () => {
             <div className="py-[5] mt-10 mx-10">
                  <img src="https://s3-alpha-sig.figma.com/img/703c/8891/5533c5f17c442957a1620e49d4b8c0db?Expires=1670198400&Signature=LG7Cis6JiSAoCyTZJAsp6Lxt1cwh32FpHHtqgUDUxUIcOOmuVJ-8WhdYhlMi8Fwrp7mpXtq2sXXs832CE4dlRnPrnwCMlppKzoAOxugnCNOh6IPEckEfccvHDU2qJ~iDcM940nrFXM~iejTl50CmWKszbm7tjl4nMc6XKOdwsCis5xeAIgWPb4GsUfHxBoj8MmImW2tQnxzT5CSYB0wLUA--icZlogKbYyxfrphDXFAcwTaXqmUZwkQUMp19Vd3ybY2Q1DpWyqHghOx2SNt787hGSdvbflaIWk6NyT7ngyP7hboGNOYBmf95mWywUuvxnY-X8bgbh-trQKgp6BxF~Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=" " className="w-[100%] px-[5]" />
            </div>  
-           <div className="py-5  font-black text-center text-2xl font-Sans font-bold   ">
+           <div className="py-5  font-black text-center text-2xl font-[Inter-Regular] font-bold   ">
               Welcome to LOYALTI
             </div>
-            <div className=" px-15 font-black text-center text-sm font-Inter font-normal text-[#5A5761]">
+            <div className=" px-15 font-black text-center text-sm font-[Inter-Regular] font-normal text-[#5A5761]">
               To continue access your account please log in
             </div>
             {/* <IonList className="px-3 pb-24 dark:bg-transparent">
