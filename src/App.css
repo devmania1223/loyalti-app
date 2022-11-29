@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   a {
     --ion-color-primary: #3b82f6;
   }
@@ -13,9 +13,19 @@ ion-tab-button.home{
   background-color: #000000;
 }
 
-}
-.primary-color{
+} */
+.primary-color {
   color: #FFA101;
+}
+
+ion-tab-button.home {
+  color: #BAB9BD;
+  font-family: "Inter-Regular";
+  font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+letter-spacing: 0.1px;
 }
 ion-tab-button.home.tab-selected,
 ion-tab-button.home.tab-selected:hover {
@@ -44,7 +54,9 @@ ion-tab-button.user.tab-selected:hover {
 .blue.alert-button.sc-ion-alert-ios {
   color: #3b82f6;
 }
-.alert-button.ion-focused.sc-ion-alert-ios, .alert-button.ion-activated.sc-ion-alert-ios {
+
+.alert-button.ion-focused.sc-ion-alert-ios,
+.alert-button.ion-activated.sc-ion-alert-ios {
   background-color: transparent;
 }
 
@@ -57,4 +69,70 @@ ion-alert.sc-ion-alert-ios-h.sc-ion-alert-ios-s {
   --border-radius: 1rem;
   --border-style: solid;
   --border-width: 1px;
+}
+
+/* Scoped components require higher specificity to customize */
+ion-searchbar.custom-searchbar {
+  --background: #19422d;
+  --color: #fff;
+  --placeholder-color: #99969E;
+  --icon-color: #fff !important;
+  --clear-button-color: #fff;
+  border: 1px solid #DEDEE0;
+  --border-radius: 4px;
+  height: 45px;
+  --ion-color-dark: #ffffff;
+  --ion-color-dark-rgb: 244, 245, 248;
+  --ion-color-dark-contrast: #868080;
+  --ion-color-dark-contrast-rgb: 0, 0, 0;
+  --ion-color-dark-shade: #d7d8da;
+  --ion-color-dark-tint: #f5f6f9;
+  font-family: "Inter-Regular" ;
+  font-weight: 400;
+}
+
+ion-searchbar.ios.custom-searchbar {
+  --cancel-button-color: #19422d;
+}
+
+ion-searchbar.md.custom-searchbar {
+  --cancel-button-color: #fff;
+}
+
+
+.category-button {
+  border: 1px solid #FFA101;
+  height: 42px;
+  border-radius: 18px;
+  padding: 9px 20px;
+  margin: 6px;
+  width: auto;
+  word-wrap: normal;
+  font-size: 14px;
+  color: #99969E;
+  font-family: "Inter-Regular";
+}
+.category-button:hover {
+  color: white;
+  background-color: #FFA101;
+}
+
+.category-selected {
+  color: white;
+  background-color: #FFA101;
+}
+
+.category-button-div::-webkit-scrollbar {
+  display: none;
+  overflow-x: scroll;
+
+  /* for Chrome, Safari, and Opera */
+}
+.category-button-div {
+  overflow-x: scroll;
+width: 100%;
+  /* for Chrome, Safari, and Opera */
+}
+.card{
+  border: 1px solid #DEDEDE
 }

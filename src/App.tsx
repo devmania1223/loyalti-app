@@ -28,7 +28,7 @@ import Tips from "./pages/Tips";
 import StressMgmt from "./pages/tips/StressMgmt";
 import TimeMgmt from "./pages/tips/TimeMgmt";
 import User from "./pages/User";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 
 import { TasksContext } from "./utils/contexts/TasksContext";
 
@@ -92,7 +92,7 @@ const App: React.FC = () => {
               <User />
             </Route>
             <Route exact path="/">
-              <Redirect to="/Tasks" />
+              <Redirect to="/Login" />
             </Route>
           </IonRouterOutlet>
           <IonTabBar
@@ -157,7 +157,7 @@ const App: React.FC = () => {
                 })
               }>
               <IonIcon icon={search}/>
-              <IonLabel className="font-semibold">New Task</IonLabel>
+              <IonLabel className="font-semibold">Search</IonLabel>
             </IonTabButton>
             {/* <IonTabButton tab="Matrix" href="/Matrix" className="matrix">
               <IonIcon icon={grid} />
@@ -168,7 +168,7 @@ const App: React.FC = () => {
               href="/Stopwatch"
               className="home">
               <IonIcon icon={card} />
-              <IonLabel className="font-semibold">Stopwatch</IonLabel>
+              <IonLabel className="font-semibold">Orders</IonLabel>
             </IonTabButton>
             <IonTabButton tab="User" href="/Login" className="home">
               <IonIcon icon={person} />
