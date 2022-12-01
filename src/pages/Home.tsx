@@ -72,6 +72,16 @@ const Home: React.FC = () => {
       barcodeImg:
         "https://as2.ftcdn.net/v2/jpg/02/28/23/91/1000_F_228239110_4eEmhcqbUpZG8y1x1aazFBQMVmbGjoce.jpg",
     },
+    {
+      shopImg:
+        "https://cdn.oliverbonacininetwork.com/uploads/sites/42/2022/04/Canoe-Interior-Evening-Vibes-5170.jpg",
+      shopName: " Daily shop ltd.",
+      rating: "4.3",
+      ratingCount: "200+",
+      amount: "2050",
+      barcodeImg:
+        "https://as2.ftcdn.net/v2/jpg/02/28/23/91/1000_F_228239110_4eEmhcqbUpZG8y1x1aazFBQMVmbGjoce.jpg",
+    },
   ];
 
   const category = ["All", "Category 1", "Category 2", "Category 3"];
@@ -86,7 +96,8 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         {shops.length ? (
-          <div className="h-full w-full">
+          <div className="h-full w-full ">
+            <div className="fixed...">
             <div className="shrink-0 flex justify-between ">
               <div className="flex">
                 <img
@@ -130,6 +141,7 @@ const Home: React.FC = () => {
                 className=" rounded-full shadow-none custom-searchbar 	"
                 placeholder="Search here"></IonSearchbar>
             </div>
+            
             <div className="grid grid-flow-col auto-cols-max pt-5 pl-3 category-button-div">
               {category.map((category, index) => (
                 <button
@@ -144,10 +156,13 @@ const Home: React.FC = () => {
                   {category}
                 </button>
               ))}
-            </div>
+            </div ></div>
+            <div className="mb-55 shop">
             {shops.map(shop => (
               <ShopCard {...shop} />
             ))}
+          </div>
+          <div className="h-[50px] fixed.."></div>
           </div>
         ) : (
           <NoTasks />

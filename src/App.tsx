@@ -70,7 +70,7 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <IonTabs>
+        <IonTabs className="tab fixed..">
         <IonRouterOutlet>
           <Route exact path="/Login">
               <Login />
@@ -111,18 +111,17 @@ const App: React.FC = () => {
               <IonLabel className="font-semibold">Home</IonLabel>
             </IonTabButton>
             <IonTabButton
-              tab="search"
+              tab="Search"
               href="/Search"
               className="home"
-  
               >
               <IonIcon icon={search}/>
               <IonLabel className="font-semibold">Search</IonLabel>
             </IonTabButton>
 
             <IonTabButton
-              tab="Stopwatch"
-              href="/Stopwatch"
+              tab="Home"
+              href="/Home"
               className="home">
               <IonIcon icon={card} />
               <IonLabel className="font-semibold">Orders</IonLabel>

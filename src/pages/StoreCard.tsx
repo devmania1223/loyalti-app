@@ -9,11 +9,10 @@ function StoreCard(props: any) {
         alt="Silhouette of mountains"
         src={props.shopImg}
       />
-      <div className="pt-3 pb-0">
-        <div className=" ">
+      <div className="pt-3 pb-0 h-[49px]">
           
           <div className=" ">
-            <p className="font-[Inter-Regular] text-black font-semibold text-base text-left store-overflow ">
+            <p className="font-[Inter-Regular] text-black font-medium text-base text-left store-overflow ">
               {props.shopName}
             </p>
           </div>
@@ -21,16 +20,13 @@ function StoreCard(props: any) {
           <div className=" text-right ">
               <IonIcon
                 icon={ellipse}
-                className=" text-[#F7DB5E] text-[13.58px] pt-1 pr-1"
+                className=" text-[#F7DB5E] text-[15.58px] pt- pr-1"
               />{" "}
             </div>
-            <p className="font-[Inter-Regular] text-black font-normal text-[14px #99969E] text-[#99969E] text-left ">
+            <p className="font-[Inter-Regular]  font-normal text-[14px] text-[#99969E] text-left ">
               {props.amount}
             </p>
-          </div>
         </div>
-        
-        ​
       </div>
     </div>
   );

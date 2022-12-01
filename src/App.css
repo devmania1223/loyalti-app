@@ -79,9 +79,9 @@ ion-searchbar.custom-searchbar {
   --icon-color: #fff !important;
   --clear-button-color: #fff;
   border: 1px solid #DEDEE0;
+  height:45px;
   --border-radius: 4px;
-  height: 45px;
-  --ion-color-dark: #ffffff;
+  --ion-color-dark: none;
   --ion-color-dark-rgb: 244, 245, 248;
   --ion-color-dark-contrast: #868080;
   --ion-color-dark-contrast-rgb: 0, 0, 0;
@@ -90,6 +90,7 @@ ion-searchbar.custom-searchbar {
   font-family: "Inter-Regular" ;
   font-weight: 400;
   font-size: 16px;
+  --box-shadow: none;
 }
 
 ion-searchbar.ios.custom-searchbar {
@@ -104,9 +105,9 @@ ion-searchbar.md.custom-searchbar {
 .category-button {
   border: 1px solid #FFA101;
   height: 42px;
-  border-radius: 18px;
+  border-radius: 20px;
   padding: 9px 20px;
-  margin: 6px;
+  margin: 5px;
   width: auto;
   word-wrap: normal;
   font-size: 14px;
@@ -135,12 +136,27 @@ width: 100%;
   /* for Chrome, Safari, and Opera */
 }
 .card{
-  border: 1px solid #DEDEDE
+  border: 1px solid #DEDEDE;
+  box-shadow:none;
+  border-radius: 10px;
 }
 
 .store-overflow {
   width: 150px;
   overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+}
+
+.shop{
+  height:66vh;
+  overflow:scroll; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+}
+.store{
+  height:70vh;
+  overflow:scroll; 
   white-space:nowrap; 
   text-overflow: ellipsis;
 }
