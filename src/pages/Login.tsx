@@ -15,7 +15,9 @@ const Login: React.FC = () => {
     });
   }, []);
 
-
+const LogedIn=()=>{
+window.location.href="/Home"
+}
 
   return (
     <IonPage>
@@ -75,7 +77,7 @@ const Login: React.FC = () => {
               </p>
             </div>
             <div className="py-5 px-5 text-center  ">
-              <button className="rounded-full w-[100%] text-white bg-[#FFA300] px-5 py-4 ">
+              <button className="rounded-full w-[100%] text-white bg-[#FFA300] px-5 py-4 " onClick={LogedIn}>
                 Log in
               </button>{" "}
             </div>
