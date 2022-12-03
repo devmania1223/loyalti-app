@@ -1,5 +1,5 @@
 import { IonHeader, IonIcon, IonPage, IonSearchbar } from "@ionic/react";
-import { ellipse, star } from "ionicons/icons";
+import { arrowRedo, chevronBack, ellipse, search, star } from "ionicons/icons";
 import FeaturedItem from "./FeaturedItem";
 import Item from "./Item";
 import StoreCard from "./StoreCard";
@@ -17,19 +17,19 @@ import { FreeMode, Navigation, Pagination } from "swiper";
 
 const Images = [
   {
-    img: "https://www.valentebakerysupplies.com/hubfs/orange-juice-cake-donut-recipe.jpg",
+    img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
   },
   {
-    img: "https://www.alattefood.com/wp-content/uploads/2018/03/Fruity-Pebble-Baked-Vanilla-Donuts-Recipe-99-500x500.jpg",
+    img: "https://img.freepik.com/premium-photo/delicious-donuts-rustic-wooden-table_273003-269.jpg?w=2000",
   },
   {
-    img: "https://www.postconsumerbrands.com/recipes/wp-content/uploads/sites/39/2017/10/cereal-milk-doughnuts-web.jpg",
+    img: "https://thumbs.dreamstime.com/b/coffee-stack-donuts-table-92209261.jpg",
   },
   {
-    img: "https://tastylicious.com/wp-content/uploads/2021/04/Types-of-donuts.jpg",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOL3Pkzt6fFVd5vKO6OEULltQBgoBFK4ZoQ&usqp=CAU",
   },
   {
-    img: "https://previews.123rf.com/images/iperl/iperl0903/iperl090300003/4423929-variety-of-frosted-donuts.jpg",
+    img: "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/SGITE20210621102102029773/detail/6d90921fb4134f2fb1c890eea8488708_1624271009041956456.webp",
   },
 ];
 const shops = [
@@ -84,6 +84,26 @@ function SelectedStore() {
           className="mySwiper">
           {Images.map(imgs => (
             <SwiperSlide>
+            <div className="    selected-store-top">
+            <div className="grid grid-cols-10 gap-4">
+
+  <div className="col-span-7 text-left pl-6"><IonIcon
+                icon={chevronBack}
+                className="text-[]  text-[25px]"
+              /></div>
+  <div className="col-span-1 ..."><IonIcon
+                icon={arrowRedo}
+                className="text-[]  text-[25px]"
+              /></div>
+  <div className="col-span-1 ..."> <IonIcon
+                icon={search}
+                className="text-[] px-1 pb-1 text-[25px]"
+              /></div>
+  <div className="col-span-1 ..."></div>
+
+</div>
+            
+          </div>
               <div className="swiper-zoom-container h-[280px] w-[100%]">
                 <img src={imgs.img} alt="Silhouette of mountains" />
               </div>
