@@ -1,9 +1,11 @@
 import { IonAvatar, IonCard, IonIcon } from "@ionic/react";
 import { bagOutline, ellipse, star } from "ionicons/icons";
-
+const SelectedStore =()=>{
+  window.location.href="/Store"
+  }
 function ShopCard(props: any) {
   return (
-    <IonCard className="  card">
+    <IonCard className="  card" onClick={SelectedStore}>
       <img
         className="h-[119px] w-[100%]"
         alt="Silhouette of mountains"
@@ -25,7 +27,7 @@ function ShopCard(props: any) {
           </div>
           <div className="grid grid-rows-2 col-span-5 pl-1">
             <div className="col-span-5 ... flex text-left mt-[0px] ">
-              <div className="font-[Inter-Regular] text-black font-semibold text-base text-left ">
+              <div className="font-[Inter-Regular] text-black font-semibold text-base text-[16px] text-left ">
                 {props.shopName}
               </div>
             </div>

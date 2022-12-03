@@ -11,7 +11,7 @@ import {
   useIonAlert,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { add, alarm, card, fileTray, grid, home, person, search } from "ionicons/icons";
+import { card, home, person, search } from "ionicons/icons";
 import { useContext } from "react";
 import { Redirect, Route } from "react-router-dom";
 import DetailedMatrix from "./pages/DetailedMatrix";
@@ -60,6 +60,8 @@ import GetStarted from "./pages/helpcenter/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
+import ImageSlider from "./pages/ImageSlider";
+import SelectedStore from "./pages/SelectedStore";
 
 setupIonicReact();
 
@@ -87,8 +89,8 @@ const App: React.FC = () => {
             <Route exact path="/Search">
               <Search />
             </Route>
-            <Route path="/Matrix">
-              <Matrix />
+            <Route path="/Store">
+              <SelectedStore />
             </Route>
             <Route path="/Stopwatch">
               <Stopwatch />
@@ -120,8 +122,8 @@ const App: React.FC = () => {
             </IonTabButton>
 
             <IonTabButton
-              tab="Home"
-              href="/Home"
+              tab="Orders"
+              href="/Store"
               className="home">
               <IonIcon icon={card} />
               <IonLabel className="font-semibold">Orders</IonLabel>
