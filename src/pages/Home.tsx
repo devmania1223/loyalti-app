@@ -4,17 +4,7 @@ import {
   IonIcon,
   IonPage,
   IonSearchbar,
-  IonButtons,
-  IonButton,
-  IonModal,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonList,
-  IonItem,
-  IonLabel,
-  IonAvatar,
-  IonImg,
+  IonModal
 } from "@ionic/react";
 import { barcodeOutline, ellipse } from "ionicons/icons";
 import Lottie from "lottie-react";

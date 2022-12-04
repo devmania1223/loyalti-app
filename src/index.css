@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'Inter-Regular';
-  src: local('Inter'), url(../src/assets/fonts/Inter-Regular.ttf) format('truetype');
+  src: local('Inter'), url(../src/assets/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
