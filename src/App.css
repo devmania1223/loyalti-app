@@ -168,7 +168,7 @@ width: 100%;
 }
 
 .featured-item{
-  width:100vw;
+  width:90vw;
   height:200px;
   overflow-x:scroll; 
   white-space:nowrap; 
@@ -281,4 +281,42 @@ width: 100%;
   top: 60.5px;
   color: #ffffff;
 width:100%;
+}
+
+.orders{
+  height:54vh;
+  overflow:scroll; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+
+}
+.orders-all{
+  height:80vh;
+  overflow:scroll; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+
+}
+
+.orders-past{
+  height:80vh;
+  overflow:scroll; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+opacity:0.5}
+
+ion-input.credit {
+  --color: rgb(0, 0, 0);
+  --placeholder-color: #ddd;
+  --placeholder-opacity: .8;
+--background:transparent;
+ border:none;
+ --padding-start:18px;	
+}
+.credits {
+  border: 1px solid #DEDEE0;
+border-radius:28px;
+background:  #FBFBFB;
+height:54px;
+
 }

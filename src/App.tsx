@@ -62,6 +62,8 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import ImageSlider from "./pages/ImageSlider";
 import SelectedStore from "./pages/SelectedStore";
+import OrderHistory from "./pages/OrderHistory";
+import AddCards from "./pages/AddCards";
 
 setupIonicReact();
 
@@ -92,8 +94,11 @@ const App: React.FC = () => {
             <Route path="/Store">
               <SelectedStore />
             </Route>
-            <Route path="/Stopwatch">
-              <Stopwatch />
+            <Route path="/Order">
+              <OrderHistory />
+            </Route>
+            <Route path="/AddCard">
+              <AddCards />
             </Route>
             <Route path="/User">
               <User />
@@ -123,7 +128,7 @@ const App: React.FC = () => {
 
             <IonTabButton
               tab="Orders"
-              href="/Store"
+              href="/Order"
               className="home">
               <IonIcon icon={card} />
               <IonLabel className="font-semibold">Orders</IonLabel>
