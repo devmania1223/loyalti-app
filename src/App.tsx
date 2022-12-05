@@ -12,7 +12,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { card, home, person, search } from "ionicons/icons";
-import { useContext } from "react";
+import {  useContext } from "react";
 import { Redirect, Route } from "react-router-dom";
 import DetailedMatrix from "./pages/DetailedMatrix";
 import DetailedUser from "./pages/DetailedUser";
@@ -60,10 +60,12 @@ import GetStarted from "./pages/helpcenter/GetStarted";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
-import ImageSlider from "./pages/ImageSlider";
 import SelectedStore from "./pages/SelectedStore";
 import OrderHistory from "./pages/OrderHistory";
 import AddCards from "./pages/AddCards";
+import Profile from "./pages/Profile";
+import ProfileEdit from "./pages/ProfileEdit";
+import YourOrders from "./pages/YourOrders";
 
 setupIonicReact();
 
@@ -100,8 +102,14 @@ const App: React.FC = () => {
             <Route path="/AddCard">
               <AddCards />
             </Route>
-            <Route path="/User">
-              <User />
+            <Route path="/ProfileEdit">
+              <ProfileEdit />
+            </Route>
+            <Route path="/Profile">
+              <Profile />
+            </Route>
+            <Route path="/YourOrders">
+              <YourOrders />
             </Route>
             <Route exact path="/">
               <Redirect to="/Login" />
@@ -133,7 +141,7 @@ const App: React.FC = () => {
               <IonIcon icon={card} />
               <IonLabel className="font-semibold">Orders</IonLabel>
             </IonTabButton>
-            <IonTabButton tab="User" href="/Login" className="home">
+            <IonTabButton tab="User" href="/Profile" className="home">
               <IonIcon icon={person} />
               <IonLabel className="font-semibold">User</IonLabel>
             </IonTabButton>
