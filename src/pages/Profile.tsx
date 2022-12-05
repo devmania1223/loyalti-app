@@ -73,7 +73,7 @@ function Profile() {
             />
           </div>
 
-          <div className="flex px-5 Default shadow py-3 mt-5">
+          <div className="flex px-5 Default shadow py-3 mt-5" onClick={ProfileEdit}>
             <div className="row-span-1 ... pr-3">
               {" "}
               <div>
