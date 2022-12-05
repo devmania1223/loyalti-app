@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer,useState } from "react";
 import { reducer } from "../functions";
 import { user } from "./State";
 
@@ -8,7 +8,7 @@ let persistedUser: any;
 
 switch (window.localStorage["persistedUser"]) {
   case undefined:
-    persistedUser = {};
+    persistedUser = false
     break;
   default:
     persistedUser = JSON.parse(window.localStorage["persistedUser"]);
@@ -22,19 +22,33 @@ const UserContextProvider: React.FC<
     ...user,
     ...persistedUser,
   };
+  const [isLogin, setIsLogin] = useState(false)
+  // const [state, dispatch] = useReducer(reducer, fullState);
 
-  const [state, dispatch] = useReducer(reducer, fullState);
+  useEffect(() => {
+    // if(JSON.parse(window.localStorage["persistedUser"])=="undefined"){
+    //   setIsLogin(false)
+    // }
+    // else
+     if(persistedUser==undefined){
+      setIsLogin(false)
+    }
+    else {
+      setIsLogin(persistedUser.isLogin)
+    }
+  }, []);
 
   useEffect(() => {
     window.localStorage["persistedUser"] = JSON.stringify({
-      user: state.user,
+      isLogin: isLogin,
     });
-  }, [state]);
+  }, [isLogin]);
 
-  const value = { state, dispatch };
+  const value = { isLogin, setIsLogin };
   return (
     <UserContext.Provider value={value}>{props.children}</UserContext.Provider>
   );
+  
 };
 
 export { UserContext, UserContextProvider };
