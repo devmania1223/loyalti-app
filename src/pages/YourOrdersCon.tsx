@@ -12,7 +12,10 @@ import {
 import {
   add,
   arrowRedo,
+  calendar,
+  calendarOutline,
   card,
+  cardOutline,
   chevronBack,
   chevronForward,
   ellipse,
@@ -33,11 +36,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "../App.css";
-import Location from "../../src/images/location.png";
+import Location from "../../src/images/Loc.png";
 // import required modules
 import { FreeMode, Navigation, Pagination } from "swiper";
-const Continue = () => {
-  window.location.href = "/YourOrders/Con";
+const ProfileEdit = () => {
+  window.location.href = "/AddCard";
 };
 const Images = [
   {
@@ -70,43 +73,68 @@ const shops = [
     amount: "USD7.4",
   },
 ];
-function YourOrders() {
+function YourOrdersCon() {
   return (
     <IonPage>
-      <div>
-        <div className="flex pt-5">
-          <div className=" text-left pl-6">
-            <IonIcon icon={chevronBack} className=" text-[25px]" />
-          </div>
-
-          <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
-            Your orders
-          </div>
+      <div className="flex pt-5">
+        <div className=" text-left pl-6">
+          <IonIcon icon={chevronBack} className=" text-[25px]" />
         </div>
-        <div className=" text-left text-[#FFFF] font-[Inter-Regular] text-[14px] font-medium px-5 py-2 h-[40px] bg-[#C67E02]">
+
+        <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
+          Your orders
+        </div>
+      </div>
+
+      <div className="profile-item">
+        <div className=" text-left text-[#FFFF] font-[Inter-Regular] text-[14px] font-medium px-5 py-2 h-[40px] bg-[#C67E02] ">
           You will earn 20 points from the order{" "}
         </div>
+        <div className="col-span-1 ... text-right px-5 py-3 font-[Inter-Regular] text-left text-[10px]  font-semibold text-[#1672FC]">
+          {" "}
+          <img
+            className=" h-[112px] w-[330px] rounded-[10px]"
+            src={Location}
+            alt="Current profile photo"
+          />
+        </div>
 
-        <div className="grid grid-cols-3 gap-4 ">
-          <div className="col-span-2 ...">
-            <div className="   px-5  font-[Inter-Regular] text-left text-[20px]  font-semibold text-[#1F1B29] ">
-              <div className=" pt-5 text-left text-[16px] font-[Inter-Regular] font-medium text-[#1F1B29] ">
-                Pickup your orders at:{" "}
+        <div>
+          <div className=" text-left text-[16px] font-[Inter-Regular] font-medium text-[#1F1B29] px-5 flex">
+            <IonIcon icon={calendarOutline} className=" text-[25px]" />{" "}
+            <p className="px-5">Pickup Time</p>
+          </div>
+          <div className="grid grid-cols-3 gap-4 border border-[#9B6200] m-5 rounded-md">
+            <div className="col-span-2 ...  px-5  font-[Inter-Regular] text-left text-[16px]  font-normal text-[#1F1B29] ">
+              <div className="font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29]">
+                Schedule order
               </div>
-              <div className=" text-left text-[14px] font-[Inter-Regular] font-normal text-[#2E2A36] ">
-                Jonas and borthers, park view area, 47th St.{" "}
+              <div className="font-[Inter-Regular] text-left text-[14px] py-1 pb-2 font-normal text-[#5A5761]">
+                Tomorrow 11:30- 12:00 pm
               </div>
             </div>
-          </div>
-          <div className="col-span-1 ... text-right px-5 py-5 font-[Inter-Regular] text-left text-[10px]  font-semibold text-[#1672FC]">
-            {" "}
-            <img
-              className=" h-[75px] w-[82px] rounded-[10px]"
-              src={Location}
-              alt="Current profile photo"
-            />
+            <div className="col-span-1 ... text-right px-5 pt-6 font-[Inter-Regular] text-left text-[16px]  font-medium text-[#1F1B29]">
+              <button className="bg-[#FFA101] px-[15px] py-[5px] rounded-[10px] text-[#FFFF] text-[14px] font-medium">
+                Edit
+              </button>
+            </div>
           </div>
         </div>
+        <div>
+          <div className=" text-left text-[16px] font-[Inter-Regular] font-medium text-[#1F1B29] px-5 flex ">
+            <IonIcon icon={cardOutline} className=" text-[25px]" />{" "}
+            <p className="px-5">Jonas and brother</p>
+          </div>
+          <div className="grid grid-cols-3 gap-4 pb-3">
+            <div className="col-span-2 ...    font-[Inter-Regular] text-left text-[16px]  font-normal text-[#1F1B29] pl-16 ">
+              <div className="font-[Inter-Regular] text-left text-[14px] pt-2 font-normal text-[#1F1B29] ">
+                Jonas and borthers, park view area, 47th St.
+              </div>
+            </div>
+            <div className="col-span-1 ... text-right px-5 pt-6 font-[Inter-Regular] text-left text-[16px]  font-medium text-[#1F1B29]"></div>
+          </div>
+        </div>
+
         <div className="px-3 py-1">
           <hr />
 
@@ -116,49 +144,6 @@ function YourOrders() {
 
           <hr />
         </div>
-        <div className=" text-left text-[16px] font-[Inter-Regular] font-medium text-[#000000] px-5">
-          Items:
-        </div>
-        {shops.map(shop => (
-          <div className="py-1">
-            <div className="grid  grid-cols-10 gap-4 py-1">
-              <div className="col-span-2 ... text-center ">
-                <p className="no mx-5  rounded-md text-[#22A45D] text-[16px] font-[Inter-Regular] font-medium text-[#000000]">
-                  {shop.No}
-                </p>
-              </div>
-              <div className="col-span-6 ... ">
-                {" "}
-                <div className="  text-left text-[18px] font-[Inter-Regular] font-medium text-[#1F1B29] ">
-                  {shop.shopName}{" "}
-                </div>
-                <div className=" text-left text-[16px] font-[Inter-Regular] font-normal text-[#2E2A36] ">
-                  {shop.item}{" "}
-                </div>
-              </div>
-              <div className="col-span-2 ... pr-3">
-                <div className=" pt- text-left text-[14px] font-[Inter-Regular] font-medium text-[#22A45D] ">
-                  {shop.amount}{" "}
-                </div>
-                <div className=" pt-8 text-right text-[16px] font-[Inter-Regular] font-normal text-[#5A5761] px- ">
-                  <IonIcon icon={trashBin} className=" text-[16px]" />
-                </div>
-              </div>
-            </div>
-            <div className="px-3 py-1">
-              <hr />
-
-              <div
-                style={{
-                  background: "rgba(103, 103, 103, 0.1)",
-                  height: "1px",
-                }}
-              />
-
-              <hr />
-            </div>
-          </div>
-        ))}
 
         <div className="grid grid-cols-3 gap-4 ">
           <div className="col-span-2 ...  px-5  font-[Inter-Regular] text-left text-[16px] pt-2 font-normal text-[#1F1B29] ">
@@ -188,55 +173,60 @@ function YourOrders() {
 
         <div className="grid grid-cols-3 gap-4 py-2 ">
           <div className="col-span-2 ... flex px-5  font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#22A45D] ">
-          Add more items
+            Add more items
           </div>
           <div className="col-span-1 ... text-right px-5 pt-72font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29]">
-          <IonIcon icon={chevronForward} className=" text-[20px]" />
+            <IonIcon icon={chevronForward} className=" text-[20px]" />
           </div>
         </div>
         <div className="px-3 py-1">
-              <hr />
+          <hr />
 
-              <div
-                style={{
-                  background: "rgba(103, 103, 103, 0.1)",
-                  height: "1px",
-                }}
-              />
+          <div
+            style={{
+              background: "rgba(103, 103, 103, 0.1)",
+              height: "1px",
+            }}
+          />
 
-              <hr />
-            </div>
+          <hr />
+        </div>
         <div className="grid grid-cols-3 gap-4 py-2">
           <div className="col-span-2 ... flex px-5  font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29] ">
-          Promo code
+            Promo code
           </div>
           <div className="col-span-1 ... text-right px-5 pt-72font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29]">
-          <IonIcon icon={chevronForward} className=" text-[20px]" />
+            <IonIcon icon={chevronForward} className=" text-[20px]" />
           </div>
         </div>
 
         <div className="px-3 py-1">
-              <hr />
+          <hr />
 
-              <div
-                style={{
-                  background: "rgba(103, 103, 103, 0.1)",
-                  height: "1px",
-                }}
-              />
+          <div
+            style={{
+              background: "rgba(103, 103, 103, 0.1)",
+              height: "1px",
+            }}
+          />
 
-              <hr />
-            </div>
-      </div>
-      <div className="py-6 px-5 text-center mt-[0px] ">
-          <button className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 " onClick={Continue}>
+          <hr />
+        </div>
+
+        <div className="py-4 px-5 text-center mt-[0px] ">
+          <button className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 " onClick={ProfileEdit}>
             Continue
           </button>{" "}
-        </div><div className="h-[130px] "></div>
-        
-      
+        </div>
+
+        <div className="pb-5 px-5 text-center  ">
+          <button className=" redeem rounded-full w-[100%] text-[#1F1B29] bg-[] text-[14px] text-medium px-5 py-4  ">
+            Reedem with 60 points
+          </button>{" "}
+        </div>
+      </div>
     </IonPage>
   );
 }
 
-export default YourOrders;
+export default YourOrdersCon;

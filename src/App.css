@@ -178,7 +178,6 @@ width: 100%;
 .all-items{
   height:63vh;
   overflow:scroll; 
-  white-space:nowrap; 
   text-overflow: ellipsis;
 }
 
@@ -362,10 +361,8 @@ ion-select.profile {
 }
 
 .profile-item{
-  width:auto;
   height:100vh;
   overflow-y:scroll; 
-  white-space:nowrap; 
   text-overflow: ellipsis;
 }
 
@@ -376,3 +373,6 @@ ion-select.profile {
 .no{
 border: 0.1px solid #eaeaea;
 }
+.redeem{
+  border: 1px solid #FFA101;
+  }

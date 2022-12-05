@@ -66,6 +66,8 @@ import AddCards from "./pages/AddCards";
 import Profile from "./pages/Profile";
 import ProfileEdit from "./pages/ProfileEdit";
 import YourOrders from "./pages/YourOrders";
+import YourOrdersCon from "./pages/YourOrdersCon";
+import ViewCard from "./pages/ViewCard";
 
 setupIonicReact();
 
@@ -105,11 +107,17 @@ const App: React.FC = () => {
             <Route path="/ProfileEdit">
               <ProfileEdit />
             </Route>
+            <Route path="/ViewCard">
+              <ViewCard />
+            </Route>
             <Route path="/Profile">
               <Profile />
             </Route>
             <Route path="/YourOrders">
               <YourOrders />
+            </Route>
+            <Route path="/YourOrders/Con">
+              <YourOrdersCon />
             </Route>
             <Route exact path="/">
               <Redirect to="/Login" />

@@ -14,6 +14,7 @@ import "../App.css";
 
 // import required modules
 import { FreeMode, Navigation, Pagination } from "swiper";
+import ViewCard from "./ViewCard";
 
 const Images = [
   {
@@ -184,10 +185,10 @@ function SelectedStore() {
           {shops.map(shop => (
             <FeaturedItem {...shop} />
           ))}
-        </div>
+        </div><div className="absolute z-10"><ViewCard /></div>
         <div className=" text-[16px] font-medium  text-[#000000]	font-[Inter-Regular] px-5 mt-3 ">
           All item
-        </div>
+        </div> 
         <div className="  all-items px-2 pb-7">
           {shops.map(shop => (
             <div className="py-1">
@@ -204,11 +205,12 @@ function SelectedStore() {
             </div>
           ))}
         </div></div>
-        <div className=""></div>
-      </div>
+       
+      </div> <div className="h-[100px]"></div>
       {/* <div className=" text-[16px] font-black font-medium	font-[Inter-Regular] px-5">
           Featured item
         </div> */}
+        
     </IonPage>
   );
 }
