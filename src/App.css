@@ -178,7 +178,6 @@ width: 100%;
 .all-items{
   height:63vh;
   overflow:scroll; 
-  white-space:nowrap; 
   text-overflow: ellipsis;
 }
 
@@ -320,3 +319,60 @@ background:  #FBFBFB;
 height:54px;
 
 }
+.profile-avatar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.profiles {
+  /* border: 1px solid #DEDEE0; */
+border-radius:28px;
+background:  #FBFBFB;
+height:48px;
+
+}
+
+ion-input.profile {
+  --color: rgb(0, 0, 0);
+  --placeholder-color: #ddd;
+  --placeholder-opacity: .8;
+--background:transparent;
+ border:none;
+ --padding-start:18px;	
+ font-size: 16px;
+ font-weight: 400;
+ font-family: "Inter-Regular" ;
+}
+
+ion-select.profile {
+  --color: rgb(0, 0, 0);
+  --placeholder-color: #ddd;
+  --placeholder-opacity: .8;
+--background:transparent;
+ border:none;
+ --padding-start:18px;	
+ font-size: 16px;
+ font-weight: 400;
+ font-family: "Inter-Regular" ;
+}
+
+.profile-item{
+  height:100vh;
+  overflow-y:scroll; 
+  text-overflow: ellipsis;
+}
+
+.box{
+  box-shadow: rgba(244, 241, 241, 0.25) 0px 30px 60px -12px inset, rgba(233, 228, 228, 0.3) 0px 18px 36px -18px inset;
+}
+
+.no{
+border: 0.1px solid #eaeaea;
+}
+.redeem{
+  border: 1px solid #FFA101;
+  }
