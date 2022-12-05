@@ -91,7 +91,7 @@ function Profile() {
           </div>
         </div>
         <div className="profile-item">
-          <div className="pt-5  profile-avatar  " >
+          <div className="pt-5  profile-avatar  " onClick={ProfileEdit}>
             <div>
               <IonAvatar className="w-[48px] h-[48px]">
                 <img
