@@ -33,6 +33,9 @@ import "../App.css";
 // import required modules
 import { FreeMode, Navigation, Pagination } from "swiper";
 
+const Profile = () => {
+  window.location.href = "/Profile";
+};
 const Images = [
   {
     img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
@@ -79,7 +82,7 @@ function ProfileEdit() {
       <div>
         <div className="flex pt-5">
           <div className=" text-left pl-6">
-            <IonIcon icon={chevronBack} className=" text-[25px]" />
+            <IonIcon icon={chevronBack} className=" text-[25px]" onClick={Profile}/>
           </div>
 
           <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-28">

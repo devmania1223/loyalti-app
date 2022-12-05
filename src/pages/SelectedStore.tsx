@@ -15,7 +15,9 @@ import "../App.css";
 // import required modules
 import { FreeMode, Navigation, Pagination } from "swiper";
 import ViewCard from "./ViewCard";
-
+const Home = () => {
+    window.location.href = "/Home";
+  };
 const Images = [
   {
     img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
@@ -91,6 +93,7 @@ function SelectedStore() {
   <div className="col-span-7 text-left pl-6"><IonIcon
                 icon={chevronBack}
                 className="text-[]  text-[25px]"
+                onClick={Home}
               /></div>
   <div className="col-span-1 ..."><IonIcon
                 icon={arrowRedo}
