@@ -1,35 +1,10 @@
+import { IonIcon, IonPage } from "@ionic/react";
 import {
-  IonInput,
-  IonLabel,
-  IonIcon,
-  IonItem,
-  IonPage,
-  IonSearchbar,
-  IonAvatar,
-  IonSelect,
-  IonSelectOption,
-} from "@ionic/react";
-import {
-  add,
-  arrowRedo,
-  calendar,
   calendarOutline,
-  card,
   cardOutline,
   chevronBack,
   chevronForward,
-  ellipse,
-  person,
-  personOutline,
-  search,
-  star,
-  trashBin,
 } from "ionicons/icons";
-import FeaturedItem from "./FeaturedItem";
-import Item from "./Item";
-import StoreCard from "./StoreCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -38,51 +13,24 @@ import "swiper/css/pagination";
 import "../App.css";
 import Location from "../../src/images/Loc.png";
 // import required modules
-import { FreeMode, Navigation, Pagination } from "swiper";
 const ProfileEdit = () => {
   window.location.href = "/AddCard";
 };
 
 const Order = () => {
-    window.location.href = "/YourOrders";
-  };
-const Images = [
-  {
-    img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
-  },
-  {
-    img: "https://img.freepik.com/premium-photo/delicious-donuts-rustic-wooden-table_273003-269.jpg?w=2000",
-  },
-  {
-    img: "https://thumbs.dreamstime.com/b/coffee-stack-donuts-table-92209261.jpg",
-  },
-  {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOL3Pkzt6fFVd5vKO6OEULltQBgoBFK4ZoQ&usqp=CAU",
-  },
-  {
-    img: "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/SGITE20210621102102029773/detail/6d90921fb4134f2fb1c890eea8488708_1624271009041956456.webp",
-  },
-];
-const shops = [
-  {
-    No: 1,
-    shopName: "Cookie Sandwich",
-    item: "Shortbread, chocolate turtle cookies, and red velvet.",
-    amount: "USD7.4",
-  },
-  {
-    No: 2,
-    shopName: "Cookie Sandwich",
-    item: "Shortbread, chocolate turtle cookies, and red velvet.",
-    amount: "USD7.4",
-  },
-];
+  window.location.href = "/YourOrders";
+};
+
 function YourOrdersCon() {
   return (
     <IonPage>
       <div className="flex pt-5">
         <div className=" text-left pl-6">
-          <IonIcon icon={chevronBack} className=" text-[25px]" onClick={Order}/>
+          <IonIcon
+            icon={chevronBack}
+            className=" text-[25px]"
+            onClick={Order}
+          />
         </div>
 
         <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
@@ -218,7 +166,9 @@ function YourOrdersCon() {
         </div>
 
         <div className="py-4 px-5 text-center mt-[0px] ">
-          <button className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 " onClick={ProfileEdit}>
+          <button
+            className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 "
+            onClick={ProfileEdit}>
             Continue
           </button>{" "}
         </div>

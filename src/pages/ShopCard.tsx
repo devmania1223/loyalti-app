@@ -1,8 +1,8 @@
 import { IonAvatar, IonCard, IonIcon } from "@ionic/react";
 import { bagOutline, ellipse, star } from "ionicons/icons";
-const SelectedStore =()=>{
-  window.location.href="/Store"
-  }
+const SelectedStore = () => {
+  window.location.href = "/Store";
+};
 function ShopCard(props: any) {
   return (
     <IonCard className="  card" onClick={SelectedStore}>
@@ -67,7 +67,6 @@ function ShopCard(props: any) {
             </div>{" "}
           </div>
         </div>
-        ​
       </div>
     </IonCard>
   );

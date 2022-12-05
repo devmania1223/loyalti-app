@@ -1,8 +1,7 @@
-import { IonHeader, IonIcon, IonPage, IonSearchbar } from "@ionic/react";
+import { IonIcon, IonPage } from "@ionic/react";
 import { arrowRedo, chevronBack, ellipse, search, star } from "ionicons/icons";
 import FeaturedItem from "./FeaturedItem";
 import Item from "./Item";
-import StoreCard from "./StoreCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -16,8 +15,8 @@ import "../App.css";
 import { FreeMode, Navigation, Pagination } from "swiper";
 import ViewCard from "./ViewCard";
 const Home = () => {
-    window.location.href = "/Home";
-  };
+  window.location.href = "/Home";
+};
 const Images = [
   {
     img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
@@ -87,133 +86,139 @@ function SelectedStore() {
           className="mySwiper">
           {Images.map(imgs => (
             <SwiperSlide>
-            <div className="    selected-store-top">
-            <div className="grid grid-cols-10 gap-4">
-
-  <div className="col-span-7 text-left pl-6"><IonIcon
-                icon={chevronBack}
-                className="text-[]  text-[25px]"
-                onClick={Home}
-              /></div>
-  <div className="col-span-1 ..."><IonIcon
-                icon={arrowRedo}
-                className="text-[]  text-[25px]"
-              /></div>
-  <div className="col-span-1 ..."> <IonIcon
-                icon={search}
-                className="text-[] px-1 pb-1 text-[25px]"
-              /></div>
-  <div className="col-span-1 ..."></div>
-
-</div>
-            
-          </div>
+              <div className="    selected-store-top">
+                <div className="grid grid-cols-10 gap-4">
+                  <div className="col-span-7 text-left pl-6">
+                    <IonIcon
+                      icon={chevronBack}
+                      className="text-[]  text-[25px]"
+                      onClick={Home}
+                    />
+                  </div>
+                  <div className="col-span-1 ...">
+                    <IonIcon
+                      icon={arrowRedo}
+                      className="text-[]  text-[25px]"
+                    />
+                  </div>
+                  <div className="col-span-1 ...">
+                    {" "}
+                    <IonIcon
+                      icon={search}
+                      className="text-[] px-1 pb-1 text-[25px]"
+                    />
+                  </div>
+                  <div className="col-span-1 ..."></div>
+                </div>
+              </div>
               <div className="swiper-zoom-container h-[280px] w-[100%]">
                 <img src={imgs.img} alt="Silhouette of mountains" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-       
       </div>
       <div className=" grid grid-flow-row auto-rows-max ">
-      
-          
-          <div className=" "> 
-      <div className="grid grid-rows-2 col-span-5 pl-5 mt-2">
-          <div className="col-span-5 ... flex text-left mt-[0px] ">
-            <div className="font-[Inter-Regular] text-black font-semibold text-[24px] text-left ">
-              Jonson and Brothers
+        <div className=" ">
+          <div className="grid grid-rows-2 col-span-5 pl-5 mt-2">
+            <div className="col-span-5 ... flex text-left mt-[0px] ">
+              <div className="font-[Inter-Regular] text-black font-semibold text-[24px] text-left ">
+                Jonson and Brothers
+              </div>
             </div>
-          </div>
-          <div className=" col-span-5 ... flex text-left mt-[0px]">
-            <div className=" text-left text-[#868686] font-[Inter-Regular] text-[16px] font-medium">
-              $$
-              <IonIcon
-                icon={ellipse}
-                className="text-[#868686] px-1 pb-1 text-[5px]"
-              />
+            <div className=" col-span-5 ... flex text-left mt-[0px]">
+              <div className=" text-left text-[#868686] font-[Inter-Regular] text-[16px] font-medium">
+                $$
+                <IonIcon
+                  icon={ellipse}
+                  className="text-[#868686] px-1 pb-1 text-[5px]"
+                />
+              </div>
+              <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
+                Grocery
+                <IonIcon
+                  icon={ellipse}
+                  className="text-[#868686] px-1 pb-1 text-[5px]"
+                />
+              </div>
+              <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
+                Foods
+                <IonIcon
+                  icon={ellipse}
+                  className="text-[#868686] px-1 pb-1 text-[5px]"
+                />
+              </div>
+              <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
+                Medicine
+              </div>
             </div>
-            <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
-              Grocery
-              <IonIcon
-                icon={ellipse}
-                className="text-[#868686] px-1 pb-1 text-[5px]"
-              />
-            </div>
-            <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
-              Foods
-              <IonIcon
-                icon={ellipse}
-                className="text-[#868686] px-1 pb-1 text-[5px]"
-              />
-            </div>
-            <div className=" text-left text-[#99969E] font-[Inter-Regular] text-[16px] font-normal">
-              Medicine
-            </div>
-          </div>
 
-          <div className=" col-span-5 ... flex text-left mt-[-1px]">
-            <div className=" text-left text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
-              4.3
-              <IonIcon icon={star} className="text-[#22A45D] px-3 " />
+            <div className=" col-span-5 ... flex text-left mt-[-1px]">
+              <div className=" text-left text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
+                4.3
+                <IonIcon icon={star} className="text-[#22A45D] px-3 " />
+              </div>
+              <div className=" text-left text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
+                200+ Ratings
+              </div>
+              <div className=" text-right px-3 text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
+                <IonIcon
+                  icon={ellipse}
+                  className=" text-[#F3CC30] text-[13.58px] "
+                />{" "}
+                Points Available
+              </div>
             </div>
-            <div className=" text-left text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
-              200+ Ratings
-            </div>
-            <div className=" text-right px-3 text-[#5A5761] font-[Inter-Regular] text-[12px] font-medium">
-              <IonIcon
-                icon={ellipse}
-                className=" text-[#F3CC30] text-[13.58px] "
-              />{" "}
-              Points Available
-            </div>
+          </div>
+          <div className="px-5 py-4">
+            <hr />
+
+            <div
+              style={{ background: "rgba(103, 103, 103, 0.1)", height: "1px" }}
+            />
+
+            <hr />
           </div>
         </div>
-        <div className="px-5 py-4">
-          <hr />
-
-          <div
-            style={{ background: "rgba(103, 103, 103, 0.1)", height: "1px" }}
-          />
-
-          <hr />
-        </div></div> 
         <div className="  all-items ">
-        <div className=" text-[16px] text-[#000000] font-medium	font-[Inter-Regular] px-5 py-1">
-          Featured item
+          <div className=" text-[16px] text-[#000000] font-medium	font-[Inter-Regular] px-5 py-1">
+            Featured item
+          </div>
+
+          <div className="  flex flex-nowrap gap-2 featured-item px-5 ">
+            {shops.map(shop => (
+              <FeaturedItem {...shop} />
+            ))}
+          </div>
+          <div className="absolute z-10">
+            <ViewCard />
+          </div>
+          <div className=" text-[16px] font-medium  text-[#000000]	font-[Inter-Regular] px-5 mt-3 ">
+            All item
+          </div>
+          <div className="  all-items px-2 pb-7">
+            {shops.map(shop => (
+              <div className="py-1">
+                <Item {...shop} />
+                <div className="px-3 py-1">
+                  <hr />
+
+                  <div
+                    style={{
+                      background: "rgba(103, 103, 103, 0.1)",
+                      height: "1px",
+                    }}
+                  />
+
+                  <hr />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <div className="  flex flex-nowrap gap-2 featured-item px-5 ">
-          {shops.map(shop => (
-            <FeaturedItem {...shop} />
-          ))}
-        </div><div className="absolute z-10"><ViewCard /></div>
-        <div className=" text-[16px] font-medium  text-[#000000]	font-[Inter-Regular] px-5 mt-3 ">
-          All item
-        </div> 
-        <div className="  all-items px-2 pb-7">
-          {shops.map(shop => (
-            <div className="py-1">
-              <Item {...shop} />
-              <div className="px-3 py-1">
-          <hr />
-
-          <div
-            style={{ background: "rgba(103, 103, 103, 0.1)", height: "1px" }}
-          />
-
-          <hr />
-        </div>
-            </div>
-          ))}
-        </div></div>
-       
-      </div> <div className="h-[100px]"></div>
-      {/* <div className=" text-[16px] font-black font-medium	font-[Inter-Regular] px-5">
-          Featured item
-        </div> */}
-        
+      </div>{" "}
+      <div className="h-[100px]"></div>
+     
     </IonPage>
   );
 }

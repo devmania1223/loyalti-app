@@ -1,20 +1,5 @@
 import React, { useRef } from "react";
-import {
-  IonButton,
-  IonModal,
-  IonHeader,
-  IonContent,
-  IonToolbar,
-  IonTitle,
-  IonPage,
-  IonList,
-  IonItem,
-  IonLabel,
-  IonAvatar,
-  IonImg,
-  IonSearchbar,
-  IonIcon,
-} from "@ionic/react";
+import { IonIcon } from "@ionic/react";
 import { barcode } from "ionicons/icons";
 
 function Example() {
@@ -29,7 +14,9 @@ function Example() {
           className="   text-[#342EAA]  text-[90px] text-center"
         />
       </div>
-      <div className="text-center text-[22px]  font-bold	font-[Inter-Regular] py-7">Scan OR code</div>
+      <div className="text-center text-[22px]  font-bold	font-[Inter-Regular] py-7">
+        Scan OR code
+      </div>
       <div className="text-center ">
         <p className="px-[28px] text-[14px] font-black  font-normal	font-[Inter-Regular] text-[#5E5E5E] ">
           Sodales pellentesque morbi arcu id. Netus feugiat velit iaculis

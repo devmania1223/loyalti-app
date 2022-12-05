@@ -1,13 +1,9 @@
 import { App } from "@capacitor/app";
-import { IonContent, IonIcon, IonPage, useIonAlert } from "@ionic/react";
-import { checkmark, checkmarkDone, close } from "ionicons/icons";
-import Lottie from "lottie-react";
+import { IonContent, IonPage, useIonAlert } from "@ionic/react";
 import React, { useContext, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import noTasks from "../lotties/noTasks.json";
 import { UserContext } from "../utils/contexts/UserContext";
 
-import {login} from "../features/userSlice"
 const Login: React.FC = () => {
   const { isLogin,setIsLogin } = useContext(UserContext);
 
@@ -21,15 +17,7 @@ const [password,setPassword]=useState("");
     });
   }, []);
   const [presentAlert] = useIonAlert();
-// const LogedIn=()=>{
-//   email=="admin@admin.com"&& password=="admin"?(setIsLogin(true)): presentAlert({
-//     header: 'Alert',
-//     subHeader: '',
-//     message: 'Invalid email and password',
-//     buttons: ['OK'],
-//   })
 
-// }
 
 const dispatch=useDispatch()
 const handleSubmit=(e:any)=>{
