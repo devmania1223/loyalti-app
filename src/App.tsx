@@ -68,13 +68,15 @@ import ProfileEdit from "./pages/ProfileEdit";
 import YourOrders from "./pages/YourOrders";
 import YourOrdersCon from "./pages/YourOrdersCon";
 import ViewCard from "./pages/ViewCard";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 setupIonicReact();
 
 const App: React.FC = () => {
   const [presentAlert] = useIonAlert();
   const { state, dispatch } = useContext(TasksContext);
-
+const user=useSelector(selectUser)
   return (
     <IonApp>
       <IonReactRouter>
@@ -204,7 +206,7 @@ const App: React.FC = () => {
           <DetailedUser />
         </Route>
       </IonReactRouter>
-      <IonToast
+      {/* <IonToast
         mode="ios"
         translucent
         isOpen={state.showToast}
@@ -217,7 +219,7 @@ const App: React.FC = () => {
         message={state.toastMessage}
         duration={1500}
         cssClass="text-red-500 font-sans font-medium toast"
-      />
+      /> */}
     </IonApp>
   );
 };
