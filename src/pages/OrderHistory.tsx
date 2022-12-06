@@ -33,14 +33,19 @@ function OrderHistory() {
   return (
     <IonPage>
       <div>
-        <div className="flex pt-5">
+      <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+        Order History
+      </div>
+      
+        <div className="flex mt-[-24px] absolute ">
           <div className=" text-left pl-6">
-            <IonIcon icon={chevronBack} className=" text-[25px]" />
+            <IonIcon
+              icon={chevronBack}
+              className=" text-[25px]"
+            />
           </div>
-
-          <div className=" font-[Inter-Regular] text-black font-normal text-[16px] text-center pl-20">
-            Order History
-          </div>
+        </div>
         </div>
         <div className="orders-all">
           <div className=" text-[16px] font-medium  text-[#000000]	font-[Inter-Regular] px-5 mt-5 ">

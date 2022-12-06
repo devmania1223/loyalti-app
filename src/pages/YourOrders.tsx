@@ -34,7 +34,12 @@ function YourOrders() {
   return (
     <IonPage>
       <div>
-        <div className="flex pt-5">
+      <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+      Your orders
+      </div>
+      
+        <div className="flex mt-[-24px] absolute ">
           <div className=" text-left pl-6">
             <IonIcon
               icon={chevronBack}
@@ -42,11 +47,9 @@ function YourOrders() {
               onClick={Back}
             />
           </div>
-
-          <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
-            Your orders
-          </div>
         </div>
+        </div>
+        
         <div className=" text-left text-[#FFFF] font-[Inter-Regular] text-[14px] font-medium px-5 py-2 h-[40px] bg-[#C67E02]">
           You will earn 20 points from the order{" "}
         </div>
