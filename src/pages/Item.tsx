@@ -1,5 +1,5 @@
-import { IonAvatar, IonCard, IonIcon } from "@ionic/react";
-import { add, bagOutline, ellipse, star } from "ionicons/icons";
+import { IonCard, IonIcon } from "@ionic/react";
+import { add, ellipse } from "ionicons/icons";
 
 function Item(props: any) {
   return (

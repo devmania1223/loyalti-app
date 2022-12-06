@@ -1,31 +1,5 @@
-import {
-  IonInput,
-  IonLabel,
-  IonIcon,
-  IonItem,
-  IonPage,
-  IonSearchbar,
-  IonAvatar,
-  IonSelect,
-  IonSelectOption,
-} from "@ionic/react";
-import {
-  add,
-  arrowRedo,
-  card,
-  chevronBack,
-  chevronForward,
-  ellipse,
-  person,
-  personOutline,
-  search,
-  star,
-  trashBin,
-} from "ionicons/icons";
-import FeaturedItem from "./FeaturedItem";
-import Item from "./Item";
-import StoreCard from "./StoreCard";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { IonIcon, IonPage } from "@ionic/react";
+import { chevronBack, chevronForward, trashBin } from "ionicons/icons";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,30 +9,13 @@ import "swiper/css/pagination";
 import "../App.css";
 import Location from "../../src/images/location.png";
 // import required modules
-import { FreeMode, Navigation, Pagination } from "swiper";
 const Continue = () => {
   window.location.href = "/YourOrders/Con";
 };
 const Back = () => {
-    window.location.href = "/Store";
-  };
-const Images = [
-  {
-    img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
-  },
-  {
-    img: "https://img.freepik.com/premium-photo/delicious-donuts-rustic-wooden-table_273003-269.jpg?w=2000",
-  },
-  {
-    img: "https://thumbs.dreamstime.com/b/coffee-stack-donuts-table-92209261.jpg",
-  },
-  {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOL3Pkzt6fFVd5vKO6OEULltQBgoBFK4ZoQ&usqp=CAU",
-  },
-  {
-    img: "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/SGITE20210621102102029773/detail/6d90921fb4134f2fb1c890eea8488708_1624271009041956456.webp",
-  },
-];
+  window.location.href = "/Store";
+};
+
 const shops = [
   {
     No: 1,
@@ -79,7 +36,11 @@ function YourOrders() {
       <div>
         <div className="flex pt-5">
           <div className=" text-left pl-6">
-            <IonIcon icon={chevronBack} className=" text-[25px]" onClick={Back} />
+            <IonIcon
+              icon={chevronBack}
+              className=" text-[25px]"
+              onClick={Back}
+            />
           </div>
 
           <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
@@ -191,53 +152,54 @@ function YourOrders() {
 
         <div className="grid grid-cols-3 gap-4 py-2 ">
           <div className="col-span-2 ... flex px-5  font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#22A45D] ">
-          Add more items
+            Add more items
           </div>
           <div className="col-span-1 ... text-right px-5 pt-72font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29]">
-          <IonIcon icon={chevronForward} className=" text-[20px]" />
+            <IonIcon icon={chevronForward} className=" text-[20px]" />
           </div>
         </div>
         <div className="px-3 py-1">
-              <hr />
+          <hr />
 
-              <div
-                style={{
-                  background: "rgba(103, 103, 103, 0.1)",
-                  height: "1px",
-                }}
-              />
+          <div
+            style={{
+              background: "rgba(103, 103, 103, 0.1)",
+              height: "1px",
+            }}
+          />
 
-              <hr />
-            </div>
+          <hr />
+        </div>
         <div className="grid grid-cols-3 gap-4 py-2">
           <div className="col-span-2 ... flex px-5  font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29] ">
-          Promo code
+            Promo code
           </div>
           <div className="col-span-1 ... text-right px-5 pt-72font-[Inter-Regular] text-left text-[16px] pt-2 font-medium text-[#1F1B29]">
-          <IonIcon icon={chevronForward} className=" text-[20px]" />
+            <IonIcon icon={chevronForward} className=" text-[20px]" />
           </div>
         </div>
 
         <div className="px-3 py-1">
-              <hr />
+          <hr />
 
-              <div
-                style={{
-                  background: "rgba(103, 103, 103, 0.1)",
-                  height: "1px",
-                }}
-              />
+          <div
+            style={{
+              background: "rgba(103, 103, 103, 0.1)",
+              height: "1px",
+            }}
+          />
 
-              <hr />
-            </div>
+          <hr />
+        </div>
       </div>
       <div className="py-6 px-5 text-center mt-[0px] ">
-          <button className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 " onClick={Continue}>
-            Continue
-          </button>{" "}
-        </div><div className="h-[130px] "></div>
-        
-      
+        <button
+          className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 "
+          onClick={Continue}>
+          Continue
+        </button>{" "}
+      </div>
+      <div className="h-[130px] "></div>
     </IonPage>
   );
 }

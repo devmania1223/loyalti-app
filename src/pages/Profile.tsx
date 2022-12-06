@@ -1,82 +1,15 @@
-import {
-  IonInput,
-  IonLabel,
-  IonIcon,
-  IonItem,
-  IonPage,
-  IonSearchbar,
-  IonAvatar,
-  IonSelect,
-  IonSelectOption,
-} from "@ionic/react";
-import {
-  add,
-  arrowRedo,
-  card,
-  chevronBack,
-  ellipse,
-  person,
-  personOutline,
-  search,
-  star,
-} from "ionicons/icons";
-import FeaturedItem from "./FeaturedItem";
-import Item from "./Item";
-import StoreCard from "./StoreCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { IonIcon, IonPage, IonAvatar } from "@ionic/react";
+import { chevronBack, ellipse, personOutline } from "ionicons/icons";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
 import "../App.css";
 import Barcode from "../../src/images/barcode.png";
 // import required modules
-import { FreeMode, Navigation, Pagination } from "swiper";
 const ProfileEdit = () => {
   window.location.href = "/ProfileEdit";
 };
-const Images = [
-  {
-    img: "https://img.freepik.com/premium-photo/cream-filled-donut-with-chocolate-icing-fabric-wood-with-other-donuts-piece-chocolate-background_266402-686.jpg?w=2000",
-  },
-  {
-    img: "https://img.freepik.com/premium-photo/delicious-donuts-rustic-wooden-table_273003-269.jpg?w=2000",
-  },
-  {
-    img: "https://thumbs.dreamstime.com/b/coffee-stack-donuts-table-92209261.jpg",
-  },
-  {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOL3Pkzt6fFVd5vKO6OEULltQBgoBFK4ZoQ&usqp=CAU",
-  },
-  {
-    img: "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/SGITE20210621102102029773/detail/6d90921fb4134f2fb1c890eea8488708_1624271009041956456.webp",
-  },
-];
-const shops = [
-  {
-    shopImg:
-      "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Breakfast-Bread-Bowls_exps168682_SD142780C08_30_1bC_RMS.jpg",
-    shopName: "Cookie Sandwich",
-    amount: "USD7.4",
-    coints: 10,
-  },
-  {
-    shopImg:
-      "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Breakfast-Bread-Bowls_exps168682_SD142780C08_30_1bC_RMS.jpg",
-    shopName: "Cookie Sandwich",
-    amount: "USD7.4",
-    coints: 10,
-  },
-  {
-    shopImg:
-      "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Breakfast-Bread-Bowls_exps168682_SD142780C08_30_1bC_RMS.jpg",
-    shopName: "Cookie Sandwich",
-    amount: "USD7.4",
-    coints: 10,
-  },
-];
+
 function Profile() {
   return (
     <IonPage>
@@ -91,7 +24,7 @@ function Profile() {
           </div>
         </div>
         <div className="profile-item">
-          <div className="pt-5  profile-avatar  " >
+          <div className="pt-5  profile-avatar  " onClick={ProfileEdit}>
             <div>
               <IonAvatar className="w-[48px] h-[48px]">
                 <img
@@ -140,7 +73,7 @@ function Profile() {
             />
           </div>
 
-          <div className="flex px-5 Default shadow py-3 mt-5">
+          <div className="flex px-5 Default shadow py-3 mt-5" onClick={ProfileEdit}>
             <div className="row-span-1 ... pr-3">
               {" "}
               <div>

@@ -48,6 +48,7 @@ import "@ionic/react/css/float-elements.css";
 import "@ionic/react/css/padding.css";
 import "@ionic/react/css/text-alignment.css";
 import "@ionic/react/css/text-transformation.css";
+import { UserContext } from "./utils/contexts/UserContext";
 
 /* Theme variables */
 import "./theme/variables.css";
@@ -76,6 +77,8 @@ setupIonicReact();
 const App: React.FC = () => {
   const [presentAlert] = useIonAlert();
   const { state, dispatch } = useContext(TasksContext);
+  const { isLogin } = useContext(UserContext);
+
 const user=useSelector(selectUser)
   return (
     <IonApp>
@@ -122,7 +125,7 @@ const user=useSelector(selectUser)
               <YourOrdersCon />
             </Route>
             <Route exact path="/">
-              <Redirect to="/Login" />
+              <Redirect to={isLogin?"/Home":"/Login" }/>
             </Route>
           </IonRouterOutlet>
           <IonTabBar 

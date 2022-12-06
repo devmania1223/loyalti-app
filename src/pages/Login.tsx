@@ -1,13 +1,12 @@
 import { App } from "@capacitor/app";
-import { IonContent, IonIcon, IonPage, useIonAlert } from "@ionic/react";
-import { checkmark, checkmarkDone, close } from "ionicons/icons";
-import Lottie from "lottie-react";
+import { IonContent, IonPage, useIonAlert } from "@ionic/react";
 import React, { useContext, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import noTasks from "../lotties/noTasks.json";
-import { TasksContext } from "../utils/contexts/TasksContext";
-import {login} from "../features/userSlice"
+import { UserContext } from "../utils/contexts/UserContext";
+
 const Login: React.FC = () => {
+  const { isLogin,setIsLogin } = useContext(UserContext);
+
   // const { state, dispatch } = useContext(TasksContext);
 const [email,setEmail]=useState("");
 const [password,setPassword]=useState("");
@@ -18,24 +17,19 @@ const [password,setPassword]=useState("");
     });
   }, []);
   const [presentAlert] = useIonAlert();
-const LogedIn=()=>{
-  email=="admin@admin.com"&& password=="admin"?(window.location.href="/Home"): presentAlert({
+
+
+const dispatch=useDispatch()
+const handleSubmit=(e:any)=>{
+  e.preventDefault()
+  email=="admin@admin.com"&& password=="admin"?(setIsLogin(true),window.location.href="/Home"): presentAlert({
     header: 'Alert',
     subHeader: '',
     message: 'Invalid email and password',
     buttons: ['OK'],
   })
+  console.log(isLogin)
 
-}
-
-const dispatch=useDispatch()
-const handleSubmit=(e:any)=>{
-  e.preventDefault()
-  dispatch(login({
-    email:email,
-    password:password,
-    loggedIn:"true"
-  }))
 }
 
   return (
@@ -102,7 +96,7 @@ const handleSubmit=(e:any)=>{
               </p>
             </div>
             <div className="py-5 px-5 text-center  ">
-              <button className="rounded-full w-[100%] text-white bg-[#FFA300] px-5 py-4 " type="submit" onClick={LogedIn}>
+              <button className="rounded-full w-[100%] text-white bg-[#FFA300] px-5 py-4 " type="submit" onClick={handleSubmit} >
                 Log in
               </button>{" "}
             </div></form>
