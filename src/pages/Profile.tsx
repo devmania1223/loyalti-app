@@ -1,4 +1,11 @@
-import { IonIcon, IonPage, IonAvatar } from "@ionic/react";
+import {
+  IonIcon,
+  IonPage,
+  IonAvatar,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+} from "@ionic/react";
 import { chevronBack, ellipse, personOutline } from "ionicons/icons";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -13,18 +20,24 @@ const ProfileEdit = () => {
 function Profile() {
   return (
     <IonPage>
-      <div>
-        <div className="flex pt-5">
+      {" "}
+      <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+        Profile
+      </div>
+      
+        <div className="flex mt-[-24px] absolute ">
           <div className=" text-left pl-6">
-            <IonIcon icon={chevronBack} className=" text-[25px]" />
-          </div>
-
-          <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-28">
-            Profile
+            <IonIcon
+              icon={chevronBack}
+              className=" text-[25px]"
+              onClick={Profile}
+            />
           </div>
         </div>
+        </div>
         <div className="profile-item">
-          <div className="pt-5  profile-avatar  " onClick={ProfileEdit}>
+          <div className="pt-4  profile-avatar  " onClick={ProfileEdit}>
             <div>
               <IonAvatar className="w-[48px] h-[48px]">
                 <img
@@ -72,8 +85,9 @@ function Profile() {
               alt="Current profile photo"
             />
           </div>
-
-          <div className="flex px-5 Default shadow py-3 mt-5" onClick={ProfileEdit}>
+          <div
+            className="flex px-5 Default shadow py-3 mt-5"
+            onClick={ProfileEdit}>
             <div className="row-span-1 ... pr-3">
               {" "}
               <div>
@@ -112,9 +126,10 @@ function Profile() {
             <div className=" text-left text-[#878D96] font-[Inter-Regular] text-[12px] font-normal px-5 pt-2 pb-5 ">
               Need any help? Here is help center{" "}
             </div>
-          </div>
+          </div>{" "}
+          <div className="h-[130px] "></div>
         </div>{" "}
-      </div>
+      
     </IonPage>
   );
 }

@@ -24,19 +24,21 @@ const Order = () => {
 function YourOrdersCon() {
   return (
     <IonPage>
-      <div className="flex pt-5">
-        <div className=" text-left pl-6">
-          <IonIcon
-            icon={chevronBack}
-            className=" text-[25px]"
-            onClick={Order}
-          />
-        </div>
-
-        <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
-          Your orders
-        </div>
+     <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+      Your orders
       </div>
+      
+        <div className="flex mt-[-24px] absolute ">
+          <div className=" text-left pl-6">
+            <IonIcon
+              icon={chevronBack}
+              className=" text-[25px]"
+              onClick={Order}
+            />
+          </div>
+        </div>
+        </div>
 
       <div className="profile-item">
         <div className=" text-left text-[#FFFF] font-[Inter-Regular] text-[14px] font-medium px-5 py-2 h-[40px] bg-[#C67E02] ">

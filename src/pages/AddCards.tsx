@@ -17,7 +17,12 @@ function AddCards() {
   return (
     <IonPage>
       <div>
-        <div className="flex pt-5">
+      <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+      Add cards
+      </div>
+      
+        <div className="flex mt-[-24px] absolute ">
           <div className=" text-left pl-6">
             <IonIcon
               icon={chevronBack}
@@ -25,11 +30,9 @@ function AddCards() {
               onClick={Order}
             />
           </div>
-
-          <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-24">
-            Add cards
-          </div>
         </div>
+        </div>
+      
         <div className="py-5  text-[#1F1B29] text-center text-[24px] font-[Inter-Regular] font-medium   ">
           Add your payment methods{" "}
         </div>

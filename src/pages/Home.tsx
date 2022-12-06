@@ -154,8 +154,7 @@ const Home: React.FC = () => {
           </div>
           <div className="h-[50px] fixed.."></div>
           </div>
-        ) : (
-          <NoTasks />
+        ) : (<NoTasks />
         )}
         <IonModal
           ref={modal}

@@ -25,7 +25,12 @@ function ProfileEdit() {
   return (
     <IonPage>
       <div>
-        <div className="flex pt-5">
+      <div className="pb-2">
+      <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
+        Profile
+      </div>
+      
+        <div className="flex mt-[-24px] absolute ">
           <div className=" text-left pl-6">
             <IonIcon
               icon={chevronBack}
@@ -33,10 +38,7 @@ function ProfileEdit() {
               onClick={Profile}
             />
           </div>
-
-          <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pl-28">
-            Profile
-          </div>
+        </div>
         </div>
         <div className="profile-item">
           <div className="pt-5  profile-avatar  ">
