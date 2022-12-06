@@ -181,7 +181,7 @@ function SelectedStore() {
           </div>
         </div>
         <div className="  all-items ">
-          <div className=" text-[16px] text-[#000000] font-medium	font-[Inter-Regular] px-5 py-1">
+          <div className=" text-[16px] text-[#000000] font-medium	font-[Inter-Regular] px-5 pb-3">
             Featured item
           </div>
 
@@ -190,13 +190,14 @@ function SelectedStore() {
               <FeaturedItem {...shop} />
             ))}
           </div>
-          <div className="absolute z-10">
-            <ViewCard />
+          <div className=" view-card  z-10">
+            <div className="absolute  z-10">
+            <ViewCard /></div>
           </div>
           <div className=" text-[16px] font-medium  text-[#000000]	font-[Inter-Regular] px-5 mt-3 ">
             All item
           </div>
-          <div className="  all-items px-2 pb-7">
+          <div className="  all-item px-2 pb-7">
             {shops.map(shop => (
               <div className="py-1">
                 <Item {...shop} />

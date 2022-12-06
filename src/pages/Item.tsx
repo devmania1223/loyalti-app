@@ -32,8 +32,8 @@ function Item(props: any) {
               <div className="font-[Inter-Regular] text-[#5A5761] font-medium  text-[16px] text-left h-16   ">
                 Shortbread, chocolate turtle cookies, and red velvet.
               </div>
-            <div className="  flex text-left ">
-              <div className="flex text-[14px] pr-16 ">
+            <div className="  all-item-card text-left ">
+              <div className="flex text-[14px] pr- ">
                 {" "}
                 <div className=" text-[#F7DB5E]  pt-[2px] pr-1">
                   {" "}
@@ -44,7 +44,7 @@ function Item(props: any) {
 
               </div>
 
-              <div className=" text-right px-3 text-[#22A45D] font-[Inter-Regular] text-[14px] font-normal col-span-1">
+              <div className=" text-right pr-1 text-[#22A45D] font-[Inter-Regular] text-[14px] font-normal ">
                 {props.amount}
               </div>
             </div>

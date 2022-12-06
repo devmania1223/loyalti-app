@@ -84,7 +84,7 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <div >
         {shops.length ? (
           <div className="h-full w-full ">
             <div className="fixed...">
@@ -165,7 +165,7 @@ const Home: React.FC = () => {
             <ScanQR />
           </IonContent>
         </IonModal>
-      </IonContent>
+      </div>
     </IonPage>
   );
 };
