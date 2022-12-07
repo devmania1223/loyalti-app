@@ -119,7 +119,7 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   {" "}
-                  <button id="open-modal" expand="block">
+                  <button id="open-modal" >
                     <IonIcon icon={barcodeOutline} className="home text-2xl" />
                   </button>
                 </div>
