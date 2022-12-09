@@ -33,7 +33,7 @@ const shops = [
 function YourOrders() {
   return (
     <IonPage>
-      <div>
+     
       <div className="pb-2">
       <div className=" font-[Inter-Regular]  font-normal text-[16px] text-center pt-5   ">
       Your orders
@@ -53,7 +53,7 @@ function YourOrders() {
         <div className=" text-left text-[#FFFF] font-[Inter-Regular] text-[14px] font-medium px-5 py-2 h-[40px] bg-[#C67E02]">
           You will earn 20 points from the order{" "}
         </div>
-
+ <div className="profile-item">
         <div className="grid grid-cols-3 gap-4 ">
           <div className="col-span-2 ...">
             <div className="   px-5  font-[Inter-Regular] text-left text-[20px]  font-semibold text-[#1F1B29] ">
@@ -194,7 +194,7 @@ function YourOrders() {
 
           <hr />
         </div>
-      </div>
+      
       <div className="py-6 px-5 text-center mt-[0px] ">
         <button
           className="rounded-full w-[100%] text-white bg-[#FFA300] text-[14px] text-medium px-5 py-4 "
@@ -202,7 +202,7 @@ function YourOrders() {
           Continue
         </button>{" "}
       </div>
-      <div className="h-[130px] "></div>
+     </div>
     </IonPage>
   );
 }

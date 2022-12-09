@@ -417,3 +417,18 @@ ion-select.profile {
   align-content: center;
   align-items: center;
 }
+.view-card-feature{
+  display:none
+    }
+    .view-card-feature-after{
+      display:flex
+    }
+@media only screen and (max-width: 385px) and (max-height: 740px) {
+  .view-card-feature{
+display:flex
+  }
+  .view-card-feature-after{
+    display:none
+  }
+}
+

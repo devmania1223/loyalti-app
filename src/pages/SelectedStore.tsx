@@ -184,13 +184,16 @@ function SelectedStore() {
           <div className=" text-[16px] text-[#000000] font-medium	font-[Inter-Regular] px-5 pb-3">
             Featured item
           </div>
-
+          <div className=" view-card view-card-feature z-10">
+            <div className="absolute  z-10">
+            <ViewCard /></div>
+          </div>
           <div className="  flex flex-nowrap gap-2 featured-item px-5 ">
             {shops.map(shop => (
               <FeaturedItem {...shop} />
             ))}
           </div>
-          <div className=" view-card  z-10">
+         <div className=" view-card view-card-feature-after z-10">
             <div className="absolute  z-10">
             <ViewCard /></div>
           </div>
