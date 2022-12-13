@@ -71,6 +71,7 @@ import YourOrdersCon from "./pages/YourOrdersCon";
 import ViewCard from "./pages/ViewCard";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import WelcomeScreen from "./pages/WelcomeScreen";
 
 setupIonicReact();
 
@@ -85,6 +86,9 @@ const user=useSelector(selectUser)
       <IonReactRouter>
         <IonTabs className="tab fixed..">
         <IonRouterOutlet>
+        <Route exact path="/WelcomeScreen">
+              <WelcomeScreen/>
+            </Route>
           <Route exact path="/Login">
               <Login />
             </Route>
