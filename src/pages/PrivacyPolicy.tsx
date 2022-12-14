@@ -40,11 +40,11 @@ const PrivacyPolicy: React.FC = () => (
           Policy, you can contact us.
         </div>
         <p className="text-center font-bold underline underline-offset-2 mt-2">
-          Information FIMPO Collects
+          Information Loyalti Collects
         </p>
         <div className="font-bold">Your activity & apps</div>
         <div>
-          At the time you register for FIMPO, you voluntarily give us
+          At the time you register for Loyalti, you voluntarily give us
           information such as your name and email address. You have access and
           can update this information under your personal Account Settings at
           any time. We also collect aggregated, anonymous user data about the
@@ -53,13 +53,13 @@ const PrivacyPolicy: React.FC = () => (
         <div className="bold">Your browsers & devices</div>
         <div>
           We collect information about the browsers and devices you use to
-          access FIMPO. The user data we collect is used to enhance FIMPO and
+          access Loyalti. The user data we collect is used to enhance Loyalti and
           the quality of our service. We only collect personal data required to
           deliver our services, and we only store it to the extent that it is
           essential to perform these services.
         </div>
         <p className="text-center font-bold underline underline-offset-2 mt-2">
-          Why Does FIMPO Collects Data?
+          Why Does Loyalti Collects Data?
         </p>
         <div>
           We use data to build better services. Your information will not be
@@ -82,20 +82,20 @@ const PrivacyPolicy: React.FC = () => (
         </div>
         <div className="font-bold">Communicate with you</div>
         <div>
-          FIMPO collects email addresses from those who communicate with us via
+          Loyalti collects email addresses from those who communicate with us via
           email, as well as information provided through voluntary activities
           such as site registration or survey participation. We use the
           information we collect to interact with you directly.
         </div>
         <div className="font-bold">
-          Protect FIMPO, our users, and the public
+          Protect Loyalti, our users, and the public
         </div>
         <div>
           <div>
             We use information to help improve the safety and reliability of our
             services. This includes detecting, preventing, and responding to
             fraud, abuse, security risks, and technical issues that could harm
-            FIMPO, our users, or the public.
+            Loyalti, our users, or the public.
           </div>
           <p>
             We use different technologies to process your information for these
@@ -112,19 +112,19 @@ const PrivacyPolicy: React.FC = () => (
           Your Privacy Controls
         </p>
         <div>
-          While FIMPO owns the FIMPO application's code, databases, and all
+          While Loyalti owns the Loyalti application's code, databases, and all
           rights, you retain all rights to your data. You have choices regarding
-          the information we collect and how it's used. FIMPO will never sell
+          the information we collect and how it's used. Loyalti will never sell
           your personal data with a third party, and we will never share data to
           third parties without your permission. When absolutely necessary,
-          FIMPO uses third party services and hosting partners who are
+          Loyalti uses third party services and hosting partners who are
           GDPR-compliant. In such instances, we take essential security methods
           to guarantee that we comply with GDPR when sending and receiving data
           from third parties.
         </div>
         <div className="font-bold">Cookies</div>
         <div>
-          Cookies are required on FIMPO's Website. We use them to collect
+          Cookies are required on Loyalti's Website. We use them to collect
           visitors' preferences and thus to better optimize the user experience.
           Users can disable cookies in their browser settings. But please note
           that our services rely on cookies to function properly, and you may
@@ -134,7 +134,7 @@ const PrivacyPolicy: React.FC = () => (
         <div className="font-bold">Data Retention & Secure</div>
         <div>
           <div>
-            FIMPO is built with strong security features that continuously
+            Loyalti is built with strong security features that continuously
             protect your information. SSL protocol secures all data and
             information transmitted with Service. The insights we gain from
             maintaining our services help us detect and automatically block
@@ -143,7 +143,7 @@ const PrivacyPolicy: React.FC = () => (
             you and help guide you through steps to stay better protected.
           </div>
           <p>
-            We work hard to protect you and FIMPO from unauthorized access,
+            We work hard to protect you and Loyalti from unauthorized access,
             alteration, disclosure, or destruction of information we hold.
           </p>
         </div>
@@ -156,8 +156,8 @@ const PrivacyPolicy: React.FC = () => (
         </div>
         <div className="font-bold">Data Deletion</div>
         <div>
-          You can delete your FIMPO account with "Avatar - Settings - Account
-          and Security" in FIMPO website. If you terminate your Account, any
+          You can delete your Loyalti account with "Avatar - Settings - Account
+          and Security" in Loyalti website. If you terminate your Account, any
           association between your Account and information we store will no
           longer be accessible through your Account. We will stop providing
           products and/or services to you and delete your personal information
@@ -178,14 +178,14 @@ const PrivacyPolicy: React.FC = () => (
           <p>
             Please check back periodically to keep informed of updates or
             changes to this Privacy Policy. By continuing to access and to use
-            FIMPO, you are agreeing to be bound by the revised policy.
+            Loyalti, you are agreeing to be bound by the revised policy.
           </p>
         </div>
         <div className="font-bold">
-          To read more details and frequently asked questions about FIMPO's
+          To read more details and frequently asked questions about Loyalti's
           privacy and terms, please read the FAQ in our Help Center.
         </div>
-        <div className="font-light text-center my-4">© 2022 FIMPO Team</div>
+        <div className="font-light text-center my-4">© 2022 Loyalti Team</div>
       </div>
     </IonContent>
   </IonPage>

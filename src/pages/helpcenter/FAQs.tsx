@@ -38,7 +38,7 @@ const FAQs: React.FC = () => (
             className="rounded-t-2xl border-x border-t">
             <IonItem slot="header" color="light" className="border-b">
               <div className="py-3 font-sans">
-                What is Fimpo? How does it help me?
+                What is Loyalti? How does it help me?
               </div>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -48,9 +48,9 @@ const FAQs: React.FC = () => (
               usually change with time. It is quite handleable for our mind if
               it's just 2 or 3 tasks, but what if there are 10 or 20? Our brain
               lose focus on what's important and forget things from time to
-              time. That is why you need a second-brainer app like Fimpo to help
+              time. That is why you need a second-brainer app like Loyalti to help
               you free out your mind while still keeping track of everything.
-              Fimpo is an application that assists you to manage your time
+              Loyalti is an application that assists you to manage your time
               better by categorizing tasks by urgency, which helps you to find
               out what is to be done next. After opening the application, click
               on the new task button in the bottom navigation drawer. Enter a
@@ -63,12 +63,12 @@ const FAQs: React.FC = () => (
               <div className="py-3 font-sans">How can I create a new task?</div>
             </IonItem>
             <div className="ion-padding" slot="content">
-              Move tasks from your mind to Fimpo.
+              Move tasks from your mind to Loyalti.
               <br />
               <br />
               Start from Home
               <br />
-              Home in Fimpo is basically a place to collect all your unplanned
+              Home in Loyalti is basically a place to collect all your unplanned
               tasks and random thoughts. Collecting everything into Home is the
               first step to get everything out of your mind.
               <br />

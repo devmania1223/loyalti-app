@@ -29,14 +29,14 @@ const TermsOfUse: React.FC = () => (
         Terms Of Use
       </IonTitle>
       <div className="px-5 py-10 font-sans">
-        <div className="font-bold">Welcome to Fimpo!</div>
+        <div className="font-bold">Welcome to Loyalti!</div>
         <p>
           Thanks for using our product. By using our Services, you are agreeing
           to these terms. Please read them carefully. IF YOU DO NOT AGREE TO
           THESE TERMS, PLEASE DO NOT USE THE SERVICES.
         </p>
         <p>
-          These terms govern your use of Fimpo, including its features, apps,
+          These terms govern your use of Loyalti, including its features, apps,
           services, technologies, and software we offer, except where we
           expressly state that separate terms (and not these) apply.
         </p>
@@ -73,14 +73,14 @@ const TermsOfUse: React.FC = () => (
           traffic or safety laws.
         </div>
         <p className="text-center font-bold underline underline-offset-2 mt-2">
-          Your Fimpo Account
+          Your Loyalti Account
         </p>
 
         <div>
-          You may need a Fimpo Account to use some of our Services. To protect
-          your Fimpo Account, keep your password confidential. You are
-          responsible for the activity that happens on or through your Fimpo
-          Account. Try not to reuse your Fimpo Account password on third-party
+          You may need a Loyalti Account to use some of our Services. To protect
+          your Loyalti Account, keep your password confidential. You are
+          responsible for the activity that happens on or through your Loyalti
+          Account. Try not to reuse your Loyalti Account password on third-party
           applications.
         </div>
 
@@ -88,9 +88,9 @@ const TermsOfUse: React.FC = () => (
           Privacy and Copyright Protection
         </p>
         <div>
-          Fimpo's Privacy Policy explains how we treat your data and protect
+          Loyalti's Privacy Policy explains how we treat your data and protect
           your privacy when you use our Services. By using our Services, you
-          agree that Fimpo can use such data in accordance with our privacy
+          agree that Loyalti can use such data in accordance with our privacy
           policies.
         </div>
         <p className="text-center font-bold underline underline-offset-2 mt-2">
@@ -103,7 +103,7 @@ const TermsOfUse: React.FC = () => (
           stays yours.
         </div>
         <div>
-          You can find more information about how Fimpo uses and stores content
+          You can find more information about how Loyalti uses and stores content
           in the Privacy Policy or additional terms for particular Services. If
           you submit feedback or suggestions about our Services, we may use your
           feedback or suggestions without obligation to you.
@@ -115,11 +115,11 @@ const TermsOfUse: React.FC = () => (
           When a Service requires or includes downloadable software, this
           software may update automatically on your device once a new version or
           feature is available. Some Services may let you adjust your automatic
-          update settings. Fimpo gives you a personal, worldwide, royalty-free,
+          update settings. Loyalti gives you a personal, worldwide, royalty-free,
           non-assignable, and non- exclusive license to use the software
-          provided to you by Fimpo as part of the Services. This license is for
+          provided to you by Loyalti as part of the Services. This license is for
           the sole purpose of enabling you to use and enjoy the benefit of the
-          Services as provided by Fimpo, in the manner permitted by these terms.
+          Services as provided by Loyalti, in the manner permitted by these terms.
           You may not copy, modify, distribute, sell, or lease any part of our
           Services or included software, nor may you reverse engineer or attempt
           to extract the source code of that software, unless laws prohibit
@@ -148,7 +148,7 @@ const TermsOfUse: React.FC = () => (
           We provide our Services using a commercially reasonable level of skill
           and care and we hope that you will enjoy using them. But there are
           certain things that we don't promise about our Services.OTHER THAN AS
-          EXPRESSLY SET OUT IN THESE TERMS OR ADDITIONAL TERMS, FIMPO DOES NOT
+          EXPRESSLY SET OUT IN THESE TERMS OR ADDITIONAL TERMS, Loyalti DOES NOT
           MAKE ANY SPECIFIC PROMISES ABOUT THE SERVICES. SOME JURISDICTIONS
           PROVIDE FOR CERTAIN WARRANTIES, LIKE THE IMPLIED WARRANTY OF
           MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND,
@@ -167,7 +167,7 @@ const TermsOfUse: React.FC = () => (
           BE LIABLE TO YOU FOR ANY LOST PROFITS, REVENUES, INFORMATION, OR DATA,
           OR CONSEQUENTIAL, SPECIAL, INDIRECT, EXEMPLARY, PUNITIVE, OR
           INCIDENTAL DAMAGES ARISING OUT OF OR RELATED TO THESE TERMS OR THE
-          FIMPO PRODUCTS, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF
+          Loyalti PRODUCTS, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF
           SUCH DAMAGES. YOUR USE AND/OR PURCHASE OF SERVICE ARE ALL AT YOUR SOLE
           RISK.
         </div>
@@ -176,7 +176,7 @@ const TermsOfUse: React.FC = () => (
         </p>
         <div>
           If you are using our Services on behalf of a business, that business
-          accepts these terms. It will hold harmless and indemnify Fimpo and its
+          accepts these terms. It will hold harmless and indemnify Loyalti and its
           affiliates, officers, agents, and employees from any claim, suit, or
           action arising from or related to the use of the Services or violation
           of these terms, including any liability or expense arising from
@@ -187,14 +187,14 @@ const TermsOfUse: React.FC = () => (
           About These Terms
         </p>
         <div>
-          These terms control the relationship between Fimpo and you. They do
+          These terms control the relationship between Loyalti and you. They do
           not create any third-party beneficiary rights. If you do not comply
           with these terms, and we don't take action right away, this doesn't
           mean that we are giving up any rights that we may have (such as taking
           action in the future). If it turns out that a particular term is not
           enforceable, this will not affect any other terms.
         </div>
-        <div className="font-light text-center my-4">© 2022 Fimpo Team</div>
+        <div className="font-light text-center my-4">© 2022 Loyalti Team</div>
       </div>
     </IonContent>
   </IonPage>

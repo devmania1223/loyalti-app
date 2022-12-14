@@ -88,7 +88,7 @@ const Suggestions: React.FC = () => (
             className="rounded-b-2xl border-x border-b">
             <IonItem slot="header" color="light" className="border-b">
               <div className="py-3 font-sans">
-                What role does Fimpo play here?
+                What role does Loyalti play here?
               </div>
             </IonItem>
             <div className="ion-padding" slot="content">
@@ -106,7 +106,7 @@ const Suggestions: React.FC = () => (
               Engage: Start booking an air ticket now
               <br />
               <br />
-              Go ahead and start making your life better with Fimpo!
+              Go ahead and start making your life better with Loyalti!
             </div>
           </IonAccordion>
         </IonAccordionGroup>

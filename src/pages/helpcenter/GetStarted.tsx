@@ -30,12 +30,12 @@ const GetStarted: React.FC = () => (
       </IonTitle>
       <div className="px-5 py-10 font-sans">
         <div>
-          Welcome to Fimpo! This quick start guide will help you learn some
-          basics of establishing a task management system in Fimpo. Ready to
+          Welcome to Loyalti! This quick start guide will help you learn some
+          basics of establishing a task management system in Loyalti. Ready to
           live a more organized and productive life? Let's get started!
         </div>
         <br />
-        <div className="font-bold">Move tasks from your mind to Fimpo</div>
+        <div className="font-bold">Move tasks from your mind to Loyalti</div>
         <div>
           Meet clients, finish new design work, pick up kids at school, do
           laundry… there are just so many different tasks in work and life that
@@ -43,13 +43,13 @@ const GetStarted: React.FC = () => (
           change with time. It is quite handlable for our mind if it's just 2 or
           3 tasks, but what if there are 10 or 20? Our brain lose focus on
           what's important and forget things from time to time. That is why you
-          need a second-brainer app like Fimpo to help you free out your mind
+          need a second-brainer app like Loyalti to help you free out your mind
           while still keeping track of everything.
         </div>
         <br />
         <div className="underline underline-offset-2">Start from Home</div>
         <div>
-          Home in Fimpo is basically a place to collect all your unplanned tasks
+          Home in Loyalti is basically a place to collect all your unplanned tasks
           and random thoughts. Throwing everything into Home is the first step
           to get everything out of your mind.
         </div>
@@ -74,7 +74,7 @@ const GetStarted: React.FC = () => (
           important, and none - neither important nor urgent.
         </div>
         <div>
-          Fimpo offers you these 4 priority options when adding a task so that
+          Loyalti offers you these 4 priority options when adding a task so that
           you can focus on what truly matters. Click on the matrix button
           present in the navigation drawer. You will find four boxes titled
           urgent and important, urgent but not important, not urgent but
@@ -84,11 +84,11 @@ const GetStarted: React.FC = () => (
         <br />
         <div className="font-bold">Final words</div>
         <div>
-          Managing everything in one place is a bit difficult but Fimpo helps
+          Managing everything in one place is a bit difficult but Loyalti helps
           you make it happen! Now, it's time to truly get started. Take this
           guide and set off for a more organized and productive life!
         </div>
-        <div className="font-light text-center my-4">© 2022 FIMPO Team</div>
+        <div className="font-light text-center my-4">© 2022 Loyalti Team</div>
       </div>
     </IonContent>
   </IonPage>
