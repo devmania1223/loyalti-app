@@ -3,7 +3,7 @@ export const user: any = null;
 export const initialState = {
   tasks: [
     {
-      title: "Welcome to Fimpo",
+      title: "Welcome to Loyalti",
       description: "Thanks for choosing us. This is your first task.",
       date: new Date().toDateString(),
       completed: false,

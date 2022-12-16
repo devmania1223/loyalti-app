@@ -16,9 +16,10 @@
   "dependencies": {
     "@awesome-cordova-plugins/core": "^5.45.0",
     "@awesome-cordova-plugins/google-plus": "^5.45.0",
+    "@awesome-cordova-plugins/splash-screen": "^6.2.0",
     "@capacitor/android": "4.3.0",
     "@capacitor/app": "4.0.1",
-    "@capacitor/core": "4.3.0",
+    "@capacitor/core": "^4.3.0",
     "@capacitor/haptics": "4.0.1",
     "@capacitor/ios": "4.3.0",
     "@capacitor/keyboard": "4.0.1",
@@ -27,6 +28,7 @@
     "@ionic/react-router": "^6.3.7",
     "@reduxjs/toolkit": "^1.9.1",
     "cordova-plugin-googleplus": "^8.5.2",
+    "cordova-plugin-splashscreen": "^6.0.2",
     "ionicons": "^6.0.2",
     "lottie-react": "^2.3.1",
     "react": "^18.2.0",
@@ -38,7 +40,7 @@
     "swiper": "^8.4.5"
   },
   "devDependencies": {
-    "@capacitor/cli": "4.3.0",
+    "@capacitor/cli": "^4.3.0",
     "@ionic/cli": "^6.20.1",
     "@types/node": "^18.7.23",
     "@types/react": "^18.0.21",

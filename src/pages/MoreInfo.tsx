@@ -33,13 +33,13 @@ const MoreInfo: React.FC = () => (
           <IonCardContent className="h-fit w-fit rounded-full border-2 dark:border-gray-500">
             <img
               src="/icon.png"
-              alt="Fimpo logo"
+              alt="Loyalti logo"
               className="h-16 w-16 font-sans"
             />
           </IonCardContent>
         </IonCard>
         <div className="text-center font-sans">
-          <div className="font-bold">Fimpo</div>
+          <div className="font-bold">Loyalti</div>
           <div className="text-gray-400">v1.0.1</div>
         </div>
       </div>

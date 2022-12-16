@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Loyalti</string>
+    <string name="title_activity_main">Loyalti</string>
+    <string name="package_name">com.dkv.Loyalti</string>
+    <string name="custom_url_scheme">com.dkv.Loyalti</string>
+</resources>

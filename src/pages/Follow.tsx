@@ -41,14 +41,14 @@ const Follow: React.FC = () => (
             className="w-full h-full mb-3 flex justify-between items-center text-blue-500"
             onClick={() =>
               window.open(
-                "https://www.instagram.com/officialfimpo/",
+                "https://www.instagram.com/officialLoyalti/",
                 "_system",
                 "location=yes",
               )
             }>
             <div className="flex items-center">
               <IonIcon icon={logoInstagram} className="mr-2 w-6 h-6" />
-              <div className="text-left">Instagram (@officialfimpo)</div>
+              <div className="text-left">Instagram (@officialLoyalti)</div>
             </div>
             <IonIcon icon={chevronForward} />
           </button>
@@ -64,7 +64,7 @@ const Follow: React.FC = () => (
             }>
             <div className="flex items-center">
               <IonIcon icon={logoYoutube} className="mr-2 w-6 h-6" />
-              <div className="text-left">Youtube (@fimpo)</div>
+              <div className="text-left">Youtube (@Loyalti)</div>
             </div>
             <IonIcon icon={chevronForward} />
           </button>
@@ -73,14 +73,14 @@ const Follow: React.FC = () => (
             className="w-full h-full my-3 flex justify-between items-center text-blue-500"
             onClick={() =>
               window.open(
-                "https://twitter.com/official_fimpo",
+                "https://twitter.com/official_Loyalti",
                 "_system",
                 "location=yes",
               )
             }>
             <div className="flex items-center">
               <IonIcon icon={logoTwitter} className="mr-2 w-6 h-6" />
-              <div className="text-left">Twitter (@OFFICIAL_FIMPO)</div>
+              <div className="text-left">Twitter (@OFFICIAL_Loyalti)</div>
             </div>
             <IonIcon icon={chevronForward} />
           </button>
@@ -89,14 +89,14 @@ const Follow: React.FC = () => (
             className="w-full h-full mt-3 flex justify-between items-center text-blue-500"
             onClick={() =>
               window.open(
-                "https://t.me/officialfimpo",
+                "https://t.me/officialLoyalti",
                 "_system",
                 "location=yes",
               )
             }>
             <div className="flex items-center">
               <IonIcon icon={logoTelegram} className="mr-2 w-6 h-6" />
-              <div className="text-left">Telegram (@officialfimpo)</div>
+              <div className="text-left">Telegram (@officialLoyalti)</div>
             </div>
             <IonIcon icon={chevronForward} />
           </button>

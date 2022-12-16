@@ -116,7 +116,7 @@ const User: React.FC = () => {
                       text: "Let's go!",
                       handler: () => {
                         window.open(
-                          "mailto:officialfimpo@gmail.com",
+                          "mailto:officialLoyalti@gmail.com",
                           "_system",
                           "location=yes",
                         );
@@ -141,7 +141,7 @@ const User: React.FC = () => {
               className="w-full h-full mt-3 text-blue-500 flex justify-between items-center"
               onClick={() =>
                 window.open(
-                  "https://github.com/dhruvkrishnavaid/fimpo",
+                  "https://github.com/dhruvkrishnavaid/Loyalti",
                   "_system",
                   "location=yes",
                 )
